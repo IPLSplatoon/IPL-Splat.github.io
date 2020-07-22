@@ -1,0 +1,56 @@
+* {
+    font-family: 'Roboto', sans-serif; !important;
+}
+
+body{
+    margin: 0;
+}
+
+:root {
+    --iplBlack: #2d2d2d;
+    --iplGreen: #09a100;
+    --iplYellow: #FFBB01;
+    --iplGray: #848C8E;
+    --iplLightGrey: #D8DBE2;
+    --seperateGrey: #F8F8F8;
+    --white: #FFFFFF;
+}
+
+.button{
+    background-color: var(--iplGreen)
+}
+
+footer{
+    background-color: var(--iplGray);
+    alignment: center;
+    text-align: center;
+    display: inline-block;
+}
+
+.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy{
+    color: var(--white);
+}
+
+.fa-youtube:hover{
+    color: #FF0000;
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+.fa-discord:hover{
+    color: #7289DA;
+}
+
+.fa-patreon:hover{
+    color: #f86754;
+}
+
+.icon-battlefy:hover{
+    color: #dd4b5e;
+}
+
+.icon-footer{
+    font-size: 65px;
+}

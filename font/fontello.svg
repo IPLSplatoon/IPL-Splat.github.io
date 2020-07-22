@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="battlefy" unicode="&#xe800;" d="M193 503c1 16 69 134 87 144s183 20 183 20-143-117-175-300c-33-182-1-324-1-324s-97 421-94 460z m213-307s211 375 453 471l-134-451-428-183s363 240 391 252l81 267c0 0-293-259-363-356z m178 306s-177-168-224-304c0 0-22 94-17 115l241 189z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

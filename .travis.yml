@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+addons:
+  apt:
+    packages:
+      - openjdk-8-jre  # install Java8 as required by vnu.jar
+
+install:
+  - pip install html5validator
+
+script: html5validator --root . --also-check-css --blacklist reference_manual_html --ignore 'Attribute "webkitallowfullscreen" not allowed' 'Attribute "mozallowfullscreen" not allowed' 'The "frameborder" attribute on the "iframe" element is obsolete'
