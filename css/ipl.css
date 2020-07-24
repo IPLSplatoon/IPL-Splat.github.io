@@ -1,8 +1,8 @@
 * {
-    font-family: 'Roboto', sans-serif; !important;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     margin: 0;
 }
 
@@ -13,37 +13,134 @@ body{
     --iplGray: #848C8E;
     --iplLightGrey: #D8DBE2;
     --seperateGrey: #F8F8F8;
-    --white: #FFFFFF;
+
+    --sidebarExpandedWidth: 160px;
+    --sidebarWidth: 55px;
 }
 
-.button{
-    background-color: var(--iplGreen)
+.button {
+    background-color: var(--iplGreen);
 }
 
-footer{
+/* navigation */
+
+header {
+    width: var(--sidebarWidth);
+    background-color: var(--iplBlack);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition-duration: 0.25s;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    z-index: 999;
+}
+
+header::-webkit-scrollbar {
+    display: none;
+}
+
+header:hover {
+    width: var(--sidebarExpandedWidth);
+}
+
+header:hover nav a span, header:hover .sidebar-socials a span {
+    text-indent: 0;
+    opacity: 1;
+}
+
+.sidebar-icon {
+    width: 40px;
+    font-size: 30px;
+    color: var(--iplGray);
+    text-align: center;
+    background-color: var(--iplBlack);
+    padding: 0 7.5px;
+}
+
+.icon-battlefy {
+    font-size: 40px !important; /* this icon is weird */
+}
+
+.battlefy-link {
+    margin-bottom: 2px !important;
+}
+
+img.sidebar-icon {
+    width: 40px;
+}
+
+.sidebar-socials, nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+nav a, .sidebar-socials a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    margin-bottom: 15px;
+}
+
+nav a span {
+    color: var(--iplGray);
+}
+
+.sidebar-socials a span {
+    color: white;
+}
+
+nav a span, .sidebar-socials a span {
+    text-decoration: none;
+    text-indent: -1em;
+    display: block;
+    transition-duration: 250ms;
+    font-weight: 600;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+.page-content {
+    margin-left: var(--sidebarWidth); /* match sidebar width */
+    transition-duration: 0.25s;
+}
+
+footer {
     background-color: var(--iplGray);
-    alignment: center;
     text-align: center;
     display: inline-block;
 }
 
-.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy{
-    color: var(--white);
+/* Icon colours */
+
+.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy, .fa-twitch {
+    color: white;
+    transition-duration: 0.25s;
 }
 
-.fa-youtube:hover{
+.fa-youtube:hover {
     color: #FF0000;
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
     color: #1DA1F2;
 }
 
-.fa-discord:hover{
+.fa-discord:hover {
     color: #7289DA;
 }
 
-.fa-patreon:hover{
+.fa-patreon:hover {
     color: #f86754;
 }
 
@@ -51,6 +148,86 @@ footer{
     color: #dd4b5e;
 }
 
+.fa-twitch:hover {
+    color: #9146FF;
+}
+
 .icon-footer{
     font-size: 65px;
+}
+
+.mobile-icons {
+    display: none;
+    color: white;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+}
+
+.mobile-icons i {
+    margin-right: 15px;
+}
+
+@media (max-width: 576px) {
+    /* small baby phone screen */
+    .page-content {
+        margin-left: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 45px;
+        justify-content: flex-start;
+        overflow-y: hidden;
+    }
+
+    header:hover {
+        width: 100%;
+    }
+
+    .mobile-icons {
+        display: flex;
+    }
+
+    nav a span, .sidebar-socials a span {
+        text-indent: 0;
+        opacity: 1;
+    }
+
+    .sidebar-socials .sidebar-icon {
+        font-size: 20px;
+    }
+
+    nav > a:first-child {
+        display: none;
+    }
+}
+
+/* welcome image */
+
+.top-banner {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.top-banner-image {
+    background-image: url('/images/orgBanner.png');
+    background-size: cover;
+    background-position: center center;
+    filter: opacity(30%);
+    height: inherit;
+}
+
+.top-banner-text {
+    font-weight: 900;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%
 }

@@ -8,22 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e14df12b5.js" crossorigin="anonymous"></script>
-    <link href="css/unsemantic-grid-responsive-tablet.css" rel="stylesheet">
+    <!--<link href="css/unsemantic-grid-responsive-tablet.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/customFont.css">
     <!--JS Libraries and custom scripts -->
-    <script src="js/ipl.js"></script>
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1,
       minimum-scale=1, maximum-scale=1"/>
 </head>
 <body>
-<header>
-    <nav>
+    <header class="site-header">
+        <div class="mobile-icons">
+            <a href="/"><img class="sidebar-icon" src="/images/logo.png"></a>
+            <i class="fas fa-bars" onclick="toggleMobileMenu()"></i>
+        </div>
+        <nav>
+            <a href="/"><img class="ipl-sidebar-logo sidebar-icon" src="/images/logo.png"><span>IPL</span></a>
+            <a href="#"><i class="fas fa-home sidebar-icon"></i><span>Home</span></a>
+            <a href="#"><i class="fas fa-trophy sidebar-icon"></i><span>Tournaments</span></a>
+            <a href="#"><i class="fas fa-user sidebar-icon"></i><span>Staff</span></a>
+        </nav>
+        <div class="sidebar-socials">
+            <a href="https://battlefy.com/low-ink" class="battlefy-link"><i class="icon-battlefy sidebar-icon"></i><span>Battlefy</span></a>
+            <a href="#"><i class="fab fa-youtube sidebar-icon"></i><span>YouTube</span></a>
+            <a href="https://www.twitch.tv/iplabs"><i class="fab fa-twitch sidebar-icon"></i><span>Twitch</span></a>
+            <a href="https://twitter.com/LowInkSplatoon"><i class="fab fa-twitter sidebar-icon"></i><span>Twitter</span></a>
+            <a href="https://www.patreon.com/lowinks"><i class="fab fa-patreon sidebar-icon"></i><span>Patreon</span></a>
+            <a href="https://discord.gg/F7RaNUR"><i class="fab fa-discord sidebar-icon"></i><span>Discord</span></a>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="top-banner">
+            <div class="top-banner-image"></div>
+            <div class="top-banner-text">Welcome to Inkling Performance Labs</div>
+        </div>
+    </div>
 
-    </nav>
-</header>
-
-
-<i class="icon-battlefy"></i>
+    <script src="js/ipl.js"></script>
 </body>
 </html>
