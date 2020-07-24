@@ -214,7 +214,7 @@ footer {
 }
 
 .top-banner-image {
-    background-image: url('/images/orgBanner.png');
+    background-image: url('../images/orgBanner.png');
     background-size: cover;
     background-position: center center;
     filter: opacity(30%);
