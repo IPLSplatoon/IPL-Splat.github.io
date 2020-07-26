@@ -259,14 +259,19 @@ footer {
     display: flex;
     flex-direction: row;
     min-height: 252px;
+    margin: 0 !important;
+    /* clip path only shows the shadow on one side of the element */
+    box-shadow: 0 0 10px var(--iplBlack);
+    clip-path: inset(0 0 -10px 0);
 }
 
 .intro-section iframe {
     max-width: 300px;
     max-height: 169px;
     position: relative;
-    align-self: center;
+    align-self: flex-start;
     margin-left: auto;
+    margin-top: 15px;
 }
 
 .intro-text {
@@ -274,7 +279,7 @@ footer {
 }
 
 .intro-text p {
-    font-size: 1.25em;
+    font-size: 1.35em;
 }
 
 @media (max-width: 800px) {
@@ -284,6 +289,64 @@ footer {
 
     .intro-section iframe {
         margin-left: unset;
+        align-self: center;
+    }
+}
+
+@media (max-width: 320px) {
+    /* I don't like this... helps the iframe scale better on
+    extra smol devices */
+    .intro-section iframe {
+        align-self: unset;
+    }
+}
+
+/* Tournaments */
+
+.tournaments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px;
+}
+
+.tournament {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.tournament-description h3 {
+    font-size: 2em;
+    margin: 5px 0 5px 0;
+}
+
+.tournament-description p {
+    margin: 5px 0;
+}
+
+.tournament img {
+    width: 100px;
+    float: right;
+}
+
+@media (max-width: 900px) {
+    .tournaments-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .tournaments-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 320px) {
+    .tournaments-title {
+        /* don't go off screen we need you :( */
+        font-size: 2em;
     }
 }
 
@@ -315,7 +378,7 @@ a.link-button:hover {
 .section {
     margin: 25px;
     background-color: white;
-    padding: 15px;
+    padding: 15px 30px;
 }
 
 h2 {
@@ -323,8 +386,13 @@ h2 {
     margin: 0;
 }
 
+.page-content > h2 {
+    margin: 15px 25px;
+}
+
 @media (max-width: 576px) {
     .section {
         margin: 5px;
+        padding: 10px;
     }
 }
