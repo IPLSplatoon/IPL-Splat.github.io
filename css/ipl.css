@@ -265,7 +265,8 @@ footer {
     max-width: 300px;
     max-height: 169px;
     position: relative;
-    align-self: center
+    align-self: center;
+    margin-left: auto;
 }
 
 .intro-text {
@@ -279,6 +280,10 @@ footer {
 @media (max-width: 800px) {
     .intro-section {
         flex-direction: column;
+    }
+
+    .intro-section iframe {
+        margin-left: unset;
     }
 }
 
