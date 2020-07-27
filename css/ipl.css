@@ -181,7 +181,7 @@ footer {
 
 /* Icon colours */
 
-.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy, .fa-twitch {
+.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy, .fa-twitch, .fa-github {
     color: white;
     transition-duration: 0.25s;
 }
@@ -208,6 +208,10 @@ footer {
 
 .fa-twitch:hover {
     color: #9146FF;
+}
+
+.fa-github:hover {
+    color: #b4b5b6;
 }
 
 .icon-footer{
