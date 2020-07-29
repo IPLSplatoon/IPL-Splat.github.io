@@ -411,6 +411,8 @@ h2 {
     }
 }
 
+/*Staff Page*/
+
 .staff-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -452,6 +454,7 @@ h2 {
 }
 
 .staff img {
+    border-radius: 50%;
     width: 100px;
     float: right;
 }

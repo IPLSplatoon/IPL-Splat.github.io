@@ -11,12 +11,12 @@ fetch('data/orgHead.json')
 		        <img src="<%=staff.imagePath%>">
 		        <div class="staff-description">
 			        <h3><%=staff.title%></h3>
-			        <p><%=staff.description%></p>
+			        <p><%- staff.description %></p>
 			        <%if (staff.twitter.length > 0) { %>
 			            <h4>
 			                <a href="https://twitter.com/<%=staff.twitter%>" target="_blank">
 			                    <i class="twitter-solid fab fa-twitter"></i>
-			                    <%=staff.twitter%>
+			                    @<%=staff.twitter%>
 			                </a>
 			            </h4>
 			        <% } %>
@@ -40,12 +40,12 @@ fetch('data/headTO.json')
 		        <img src="<%=staff.imagePath%>">
 		        <div class="staff-description">
 			        <h3><%=staff.title%></h3>
-			        <p><%=staff.description%></p>
+			        <p><%- staff.description %></p>
 			        <%if (staff.twitter.length > 0) { %>
 			            <h4>
 			                <a href="https://twitter.com/<%=staff.twitter%>" target="_blank">
 			                    <i class="twitter-solid fab fa-twitter"></i>
-			                    <%=staff.twitter%>
+			                    @<%=staff.twitter%>
 			                </a>
 			            </h4>
 			        <% } %>
@@ -69,12 +69,12 @@ fetch('data/production.json')
 		        <img src="<%=staff.imagePath%>">
 		        <div class="staff-description">
 			        <h3><%=staff.title%></h3>
-			        <p><%=staff.description%></p>
+			        <p><%- staff.description %></p>
 			        <%if (staff.twitter.length > 0) { %>
 			            <h4>
 			                <a href="https://twitter.com/<%=staff.twitter%>" target="_blank">
 			                    <i class="twitter-solid fab fa-twitter"></i>
-			                    <%=staff.twitter%>
+			                    @<%=staff.twitter%>
 			                </a>
 			            </h4>
 			        <% } %>
@@ -98,12 +98,12 @@ fetch('data/staff.json')
 		        <img src="<%=staff.imagePath%>">
 		        <div class="staff-description">
 			        <h3><%=staff.title%></h3>
-			        <p><%=staff.description%></p>
+			        <p><%-staff.description%></p>
 			        <%if (staff.twitter.length > 0) { %>
 			            <h4>
 			                <a href="https://twitter.com/<%=staff.twitter%>" target="_blank">
 			                    <i class="twitter-solid fab fa-twitter"></i>
-			                    <%=staff.twitter%>
+			                    @<%=staff.twitter%>
 			                </a>
 			            </h4>
 			        <% } %>
@@ -127,12 +127,12 @@ fetch('data/commentator.json')
 		        <img src="<%=staff.imagePath%>">
 		        <div class="staff-description">
 			        <h3><%=staff.title%></h3>
-			        <p><%=staff.description%></p>
+			        <p><%- staff.description %></p>
 			        <%if (staff.twitter.length > 0) { %>
 			            <h4>
 			                <a href="https://twitter.com/<%=staff.twitter%>" target="_blank">
 			                    <i class="twitter-solid fab fa-twitter"></i>
-			                    <%=staff.twitter%>
+			                    @<%=staff.twitter%>
 			                </a>
 			            </h4>
 			        <% } %>
@@ -156,12 +156,12 @@ fetch('data/former.json')
 		        <img src="<%=staff.imagePath%>">
 		        <div class="staff-description">
 			        <h3><%=staff.title%></h3>
-			        <p><%=staff.description%></p>
+			        <p><%- staff.description %></p>
 			        <%if (staff.twitter.length > 0) { %>
 			            <h4>
 			                <a href="https://twitter.com/<%=staff.twitter%>" target="_blank">
 			                    <i class="twitter-solid fab fa-twitter"></i>
-			                    <%=staff.twitter%>
+			                    @<%=staff.twitter%>
 			                </a>
 			            </h4>
 			        <% } %>
