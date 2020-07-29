@@ -4,7 +4,9 @@
 
 body {
     margin: 0;
+    position: relative;
     background-color: var(--separateGrey);
+    min-height: 100vh;
 }
 
 :root {
@@ -191,6 +193,10 @@ footer {
 }
 
 .fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.twitter-solid {
     color: #1DA1F2;
 }
 
@@ -394,9 +400,94 @@ h2 {
     margin: 15px 25px;
 }
 
+.page-content > h4 {
+    margin: 15px 25px;
+}
+
 @media (max-width: 576px) {
     .section {
         margin: 5px;
         padding: 10px;
     }
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px;
+}
+
+.staff {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.staff-description h3 {
+    font-size: 2em;
+    margin: 5px 0 5px 0;
+}
+
+.staff-description h4 {
+    font-size: 1.5em;
+    margin: 5px 0 5px 0;
+}
+
+.staff-description h4:visited {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 5px 0 5px 0;
+}
+
+.staff-description h4:link {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 5px 0 5px 0;
+}
+
+.staff-description p {
+    margin: 5px 0;
+}
+
+.staff img {
+    width: 100px;
+    float: right;
+}
+
+@media (max-width: 900px) {
+    .staff-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 320px) {
+    .staff-title {
+        /* don't go off screen we need you :( */
+        font-size: 2em;
+    }
+}
+
+/* Footer */
+footer{
+    background-color: var(--iplGray);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.padding-space{
+    padding: 2%;
+}
+
+.twitter-link:visited{
+    text-decoration: none;
 }

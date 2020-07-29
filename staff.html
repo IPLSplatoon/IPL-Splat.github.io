@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPL</title>
+    <!--CSS Libraries and custom css-->
+    <link rel="stylesheet" href="css/ipl.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e14df12b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/customFont.css">
+    <!--JS Libraries and custom scripts -->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      minimum-scale=1, maximum-scale=1"/>
+</head>
+<body>
+<header class="site-header">
+    <div class="mobile-icons">
+        <a href="/"><img class="sidebar-icon" src="images/logo.png" alt="IPL Logo"></a>
+        <i class="fas fa-bars" onclick="toggleMobileMenu()"></i>
+    </div>
+    <nav>
+        <a href="/"><img class="ipl-sidebar-logo sidebar-icon" src="images/logo.png" alt="IPL Logo"><span>IPL</span></a>
+        <a href="#"><i class="fas fa-home sidebar-icon"></i><span>Home</span></a>
+        <a href="#"><i class="fas fa-trophy sidebar-icon"></i><span>Tournaments</span></a>
+        <a href="#"><i class="fas fa-user sidebar-icon"></i><span>Staff</span></a>
+    </nav>
+    <div class="sidebar-socials">
+        <a href="https://battlefy.com/low-ink" class="battlefy-link"><i class="icon-battlefy sidebar-icon"></i><span>Battlefy</span></a>
+        <a href="#"><i class="fab fa-youtube sidebar-icon"></i><span>YouTube</span></a>
+        <a href="https://www.twitch.tv/iplabs"><i class="fab fa-twitch sidebar-icon"></i><span>Twitch</span></a>
+        <a href="https://twitter.com/LowInkSplatoon"><i class="fab fa-twitter sidebar-icon"></i><span>Twitter</span></a>
+        <a href="https://www.patreon.com/lowinks"><i class="fab fa-patreon sidebar-icon"></i><span>Patreon</span></a>
+        <a href="https://github.com/IPL-Splat"><i class="fab fa-github sidebar-icon"></i><span>GitHub</span></a>
+        <a href="https://discord.gg/F7RaNUR"><i class="fab fa-discord sidebar-icon"></i><span>Discord</span></a>
+    </div>
+</header>
+<div class="page-content">
+    <div class="top-banner">
+        <div class="top-banner-image"></div>
+        <div class="top-banner-wrapper">
+            <h1 class="top-banner-text">Staff</h1>
+        </div>
+    </div>
+
+    <h2 class="staff-title">Organisation Heads</h2>
+    <div class="staff-grid org-head-grid"></div>
+
+    <h2 class="staff-title">Head TOs</h2>
+    <div class="staff-grid head-TO-grid"></div>
+
+    <h2 class="staff-title">Production & Development</h2>
+    <div class="staff-grid production-grid"></div>
+
+    <h2 class="staff-title">Staff</h2>
+    <div class="staff-grid staff-layout-grid"></div>
+
+    <h2 class="staff-title">Commentators</h2>
+    <div class="staff-grid commentator-grid"></div>
+
+    <h2 class="staff-title">Former Staff</h2>
+    <h4 class="staff-title"><i>These are former staff that have previously helped with IPL and are no longer with us.
+    We thank them for their contributions.</i></h4>
+    <div class="staff-grid former-staff-grid"></div>
+</div>
+
+<div class="padding-space">&nbsp;</div>
+
+<footer>
+    <h4 class="footer-text">© Inkling Performance Labs | Designed by Vincent, Inkfarer & IPL team</h4>
+</footer>
+
+<script src="js/ejs/ejs.js"></script>
+<script src="js/ipl.js"></script>
+<script src="js/staff.js"></script>
+</body>
+</html>
