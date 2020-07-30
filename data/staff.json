@@ -1,26 +1,146 @@
 [
-	{
-		"elemClassName": "staff-layout-grid",
-		"contents": [{"title": "Devvy", "description": "Hey all! I am a 23 year old girl from the Canadian prairies. I am the captain and backline for the West Broadway Grillers since December 2018 when the comp team was formed. The Grillers clan however, did originate a year earlier when me and my local friends were just casual players at the time. I've taken 3 years of college to work my way into Journalism. While I wait to get accepted into the main course, I am taking an Office Administration course. Another thing about me is that I name my main weapons. For example Steve (Heavy Splatling) & Hugo (Hydra). ", "imagePath": "images/Staff/480abdfd8edac6e9450e4bc27f31f551.png", "twitter": "DevvyWBG"}, {"title": "Shads", "description": "Proud sniper for Inkvaders, Low Ink participant, and volunteer staff member when the team doesn't play. Aside from competitive Splatoon, I like to create art, play Pokemon games, and write stories. Currently I'm studying computer science, and would one day like to work for the CIA or FBI. I help out with coding things around here.\n\n I'm also a prolific confetti thrower in Twitch stream chats and on discord <i>throws confetti</i>", "imagePath": "images/Staff/a48ac573551758b6a5f8d7edd8d6c38d.png", "twitter": "ShadowDragon42"}, {"title": ".jpg", "description": "Wanting to branch out in the splatoon community, I became a staff for low ink. Since then, I've really taken a liking to helping out newer and lower level teams. While I don't really play much Splatoon these days, I still love giving teams help and being a role model for them.", "imagePath": "images/Staff/25b2916b5c49db617f52fa5ea48efee7.png", "twitter": "notmymiiverse"}, {"title": "Totorobot", "description": "Incapable of playing anything other than N-ZAP. Competitive coordinator for Triton Splatoon at UC San Diego - enthusiastic about building up the collegiate Splatoon scene!", "imagePath": "images/Staff/f1f7f4316e1746d9fc3b09c38d68e5b2.png", "twitter": "TotorobotSD"}, {"title": "Para!!", "description": "Hi I'm Para!! I like drawing, making games, and playing splat.\nIf you ever have questions about anything feel free to ask! I'm happy to help ^^", "imagePath": "images/Staff/d55a0c284e4b51a084762a51f6f1f8dc.png", "twitter": "Pianoducks"}, {"title": "Frosch", "description": "Ice cream.", "imagePath": "images/Staff/62f6ffb5fdc20b668a45ab10daf6c46a.png", "twitter": "Froscherry"}, {"title": "x\ud835\udcdc\ud835\udcea\ud835\udd02\ud835\udcf1\ud835\udcee\ud835\udcf6x", "description": ":3c", "imagePath": "images/Staff/1121b8991793e3abe7ea9887f2f85179.png", "twitter": "zombiePegasus_q"}]
-	},
-	{
-		"elemClassName": "org-head-grid",
-		"contents": [{"title": "HoeenHero", "description": "I'm Founder and Head Organizer for Low Ink and Inkling Performance Labs. I created Low Ink because I wanted to give newer and lower teams a place where they could learn, grow, and get tournament experience, as well as wanting to help the community grow. The same desire to grow the community created Inkling Performance Labs, and as an Organization Head I'll do my best to grow and improve this community.", "imagePath": "images/Staff/787785ac476be287381237d8d9e94838.png", "twitter": "HoeenHero"}, {"title": "Kraken Mare", "description": "Kraken Mare is a <strike>meme</strike> veteran of the Splat community, playing the game from the first Testfire and being in competitive since it's early days. KM has staffed for Low Ink for over two years and has staffed other tournaments going back to S1. Is obsessed with Ozei and the number 77.", "imagePath": "images/Staff/9cb4f1a78fc0277f691d424dd225b346.png", "twitter": "Kraken_Mare"}]
-	},
-	{
-		"elemClassName": "head-TO-grid",
-		"contents": [{"title": "Skye", "description": "Ello' I'm Skye I like to draw, stream, make videos and play games!\n<br>I've been around in the community since <i>January 2019</i>, been in competitive since <i>September 2019</i>, & have been Staffing tournaments since <i>March 2020</i>.</br>\n\n<br>Usually I tend to lurk but if you approach me i'll definitely be willing to talk, since I like meeting new people and making new friends!</br>\n\n <br>\u2661Oh yea and I love working with the people in IPL that I get to work with at IPL\u2661</br>\n\u2661<i>uwu</i>\u2661", "imagePath": "images/Staff/881f32366cabc700634e3df10bc7bee9.png", "twitter": "SkyeTheDemon"}, {"title": "Raze", "description": "Current head TO for Testing Grounds. I have been a competitive player since Splatoon 1 competing at the highest level. I have been running/organizing tournaments since 2017. My goal is to make my event as easy as possible to compete in, and run them as smoothly as possible.", "imagePath": "images/Staff/af2d180bcc3869353c00f22e6e5d1c5f.png", "twitter": "raze_splat "}, {"title": "Snek", "description": "Former competitive player of Enlightenment, and former head TO of Squid Spawning Grounds, I am an avid supporter of the competitive scene that does his best to further the scene however i can, but when I'm not you can usually find me on Phantasy Star Online 2.", "imagePath": "images/Staff/68b3408c19dcab9a3a0896d1865b4d5d.png", "twitter": "Snek_FGC"}, {"title": "Froppy\u266a", "description": "A Competitive Splatoon 2 player who has been working from the bottom up. I don't get lucky, I earn everything that has come my way. I coach, help, and play with the lower level competitive community a lot.", "imagePath": "images/Staff/2d28ca7602793f6b9d5c6dd263f9b93e.png", "twitter": "littlepetfrog"}]
-	},
-	{
-		"elemClassName": "production-grid",
-		"contents": [{"title": "Vincent", "description": "Hi there \ud83d\udc4b I'm Vincent. I'm the Technical Lead for IPL developing all the code based stuff you've seem, <i>including this website</i>. I study Computer Science at uni currently and on the side I'm a <b>STEM</b> ambassador, teaching kids on computers and code. Along with coding I help run Low Ink and numerous IRL events and conferences on the side. ", "imagePath": "images/Staff/d3facf360f0b4f2d570c093e7e130210.png", "twitter": "vlee888"}, {"title": "Seagull", "description": "Hey i'm seagull and i make podcast for Lowink. my main goal on Lowink is to teach people about splatoon 2. ", "imagePath": "images/Staff/fbb1197d07f0fb4fb4b5c2947c2cb089.png", "twitter": ""}]
-	},
-	{
-		"elemClassName": "commentator-grid",
-		"contents": [{"title": "Vantox", "description": "Hey i am Vantox and i am 15 Y/o and play Splatoon 2 CP myself and love to be \nCommentator^^", "imagePath": "images/Staff/bd96576f2ae54ea611a71fdb592c3885.png", "twitter": "VantoX_Spl"}]
-	},
-	{
-		"elemClassName": "former-staff-grid",
-		"contents": [{"title": "Leaf", "description": "20/former X div comp player and TO for low ink.", "imagePath": "images/Staff/c3b5e1f7de11d645fb1da6c5415b1fa5.png", "twitter": ""}]
-	}
+    {
+        "elemClassName": "staff-layout-grid",
+        "contents": [
+            {
+                "title": "Devvy",
+                "description": "Hey all! I am a 23 year old girl from the Canadian prairies. I am the captain and backline for the West Broadway Grillers since December 2018 when the comp team was formed. The Grillers clan however, did originate a year earlier when me and my local friends were just casual players at the time. I've taken 3 years of college to work my way into Journalism. While I wait to get accepted into the main course, I am taking an Office Administration course. Another thing about me is that I name my main weapons. For example Steve (Heavy Splatling) & Hugo (Hydra). ",
+                "imagePath": "images/Staff/480abdfd8edac6e9450e4bc27f31f551.png",
+                "twitter": "DevvyWBG"
+            },
+            {
+                "title": "Shads",
+                "description": "Proud sniper for Inkvaders, Low Ink participant, and volunteer staff member when the team doesn't play. Aside from competitive Splatoon, I like to create art, play Pokemon games, and write stories. Currently I'm studying computer science, and would one day like to work for the CIA or FBI. I help out with coding things around here. I'm also a prolific confetti thrower in Twitch stream chats and on discord <i>throws confetti</i>\ud83c\udf89",
+                "imagePath": "images/Staff/a48ac573551758b6a5f8d7edd8d6c38d.png",
+                "twitter": "ShadowDragon42"
+            },
+            {
+                "title": ".jpg",
+                "description": "Wanting to branch out in the splatoon community, I became a staff for low ink. Since then, I've really taken a liking to helping out newer and lower level teams. While I don't really play much Splatoon these days, I still love giving teams help and being a role model for them.",
+                "imagePath": "images/Staff/25b2916b5c49db617f52fa5ea48efee7.png",
+                "twitter": "notmymiiverse"
+            },
+            {
+                "title": "Totorobot",
+                "description": "Incapable of playing anything other than N-ZAP. Competitive coordinator for Triton Splatoon at UC San Diego - enthusiastic about building up the collegiate Splatoon scene!",
+                "imagePath": "images/Staff/f1f7f4316e1746d9fc3b09c38d68e5b2.png",
+                "twitter": "TotorobotSD"
+            },
+            {
+                "title": "Para!!",
+                "description": "Hi I'm Para!! I like drawing, making games, and playing splat.If you ever have questions about anything feel free to ask! I'm happy to help ^^",
+                "imagePath": "images/Staff/d55a0c284e4b51a084762a51f6f1f8dc.png",
+                "twitter": "Pianoducks"
+            },
+            {
+                "title": "Frosch",
+                "description": "Ice cream.",
+                "imagePath": "images/Staff/62f6ffb5fdc20b668a45ab10daf6c46a.png",
+                "twitter": "Froscherry"
+            },
+            {
+                "title": "x\ud835\udcdc\ud835\udcea\ud835\udd02\ud835\udcf1\ud835\udcee\ud835\udcf6x",
+                "description": ":3c",
+                "imagePath": "images/Staff/1121b8991793e3abe7ea9887f2f85179.png",
+                "twitter": "zombiePegasus_q"
+            }
+        ]
+    },
+    {
+        "elemClassName": "org-head-grid",
+        "contents": [
+            {
+                "title": "HoeenHero",
+                "description": "I'm Founder and Head Organizer for Low Ink and Inkling Performance Labs. I created Low Ink because I wanted to give newer and lower teams a place where they could learn, grow, and get tournament experience, as well as wanting to help the community grow. The same desire to grow the community created Inkling Performance Labs, and as an Organization Head I'll do my best to grow and improve this community.",
+                "imagePath": "images/Staff/787785ac476be287381237d8d9e94838.png",
+                "twitter": "HoeenHero"
+            },
+            {
+                "title": "Kraken Mare",
+                "description": "Kraken Mare is a <strike>meme</strike> veteran of the Splat community, playing the game from the first Testfire and being in competitive since it's early days. KM has staffed for Low Ink for over two years and has staffed other tournaments going back to S1. Is obsessed with Ozei and the number 77.",
+                "imagePath": "images/Staff/9cb4f1a78fc0277f691d424dd225b346.png",
+                "twitter": "Kraken_Mare"
+            }
+        ]
+    },
+    {
+        "elemClassName": "head-TO-grid",
+        "contents": [
+            {
+                "title": "Skye",
+                "description": "Ello' I'm Skye I like to draw, stream, make videos and play games!<br>I've been around in the community since <i>January 2019</i>, been in competitive since <i>September 2019</i>, & have been Staffing tournaments since <i>March 2020</i>.</br><br>Usually I tend to lurk but if you approach me i'll definitely be willing to talk, since I like meeting new people and making new friends!</br> <br>\u2661Oh yea and I love working with the people in IPL that I get to work with at IPL\u2661</br>\u2661<i>uwu</i>\u2661",
+                "imagePath": "images/Staff/881f32366cabc700634e3df10bc7bee9.png",
+                "twitter": "SkyeTheDemon"
+            },
+            {
+                "title": "Raze",
+                "description": "Current head TO for Testing Grounds. I have been a competitive player since Splatoon 1 competing at the highest level. I have been running/organizing tournaments since 2017. My goal is to make my event as easy as possible to compete in, and run them as smoothly as possible.",
+                "imagePath": "images/Staff/af2d180bcc3869353c00f22e6e5d1c5f.png",
+                "twitter": "raze_splat "
+            },
+            {
+                "title": "Snek",
+                "description": "Former competitive player of Enlightenment, and former head TO of Squid Spawning Grounds, I am an avid supporter of the competitive scene that does his best to further the scene however i can, but when I'm not you can usually find me on Phantasy Star Online 2.",
+                "imagePath": "images/Staff/68b3408c19dcab9a3a0896d1865b4d5d.png",
+                "twitter": "Snek_FGC"
+            },
+            {
+                "title": "Froppy\u266a",
+                "description": "A Competitive Splatoon 2 player who has been working from the bottom up. I don't get lucky, I earn everything that has come my way. I coach, help, and play with the lower level competitive community a lot.",
+                "imagePath": "images/Staff/2d28ca7602793f6b9d5c6dd263f9b93e.png",
+                "twitter": "littlepetfrog"
+            }
+        ]
+    },
+    {
+        "elemClassName": "production-grid",
+        "contents": [
+            {
+                "title": "Vincent",
+                "description": "Hi there \ud83d\udc4b I'm Vincent. I'm the Technical Lead for IPL developing all the code based stuff you've seem, <i>including this website</i>. I study Computer Science at uni currently and on the side I'm a <b>STEM</b> ambassador, teaching kids on computers and code. Along with coding I help run Low Ink and numerous IRL events and conferences on the side. ",
+                "imagePath": "images/Staff/d3facf360f0b4f2d570c093e7e130210.png",
+                "twitter": "vlee888"
+            },
+            {
+                "title": "inkfarer",
+                "description": "I am Inkfarer - I do streaming and coding for IPL. I know a little bit of Japanese and I play a little bit of Splatoon. I have a neat website at <a href=\"https://inkfarer.com/\">inkfarer.com</a>.",
+                "imagePath": "images/Staff/345f7d19c0d789c969e299c02d3e688b.png",
+                "twitter": "inkfarer"
+            },
+            {
+                "title": "Seagull",
+                "description": "Hey i'm seagull and i make podcast for Lowink. my main goal on Lowink is to teach people about splatoon 2. ",
+                "imagePath": "images/Staff/fbb1197d07f0fb4fb4b5c2947c2cb089.png",
+                "twitter": ""
+            }
+        ]
+    },
+    {
+        "elemClassName": "commentator-grid",
+        "contents": [
+            {
+                "title": "Popgun",
+                "description": "<ul> <li>Captain of Destiny Troops</li> <li>Husband of Ms.Popgun</li> <li>Commentator of Splatoon</li> <li>Eater of food</li> </ul>",
+                "imagePath": "images/Staff/822ca9c6e7e7e3368687f1a3885cfe18.png",
+                "twitter": "Mr_Popgun"
+            },
+            {
+                "title": "Vantox",
+                "description": "Hey i am Vantox and i am 15 Y/o and play Splatoon 2 CP myself and love to be Commentator^^",
+                "imagePath": "images/Staff/bd96576f2ae54ea611a71fdb592c3885.png",
+                "twitter": "VantoX_Spl"
+            }
+        ]
+    },
+    {
+        "elemClassName": "former-staff-grid",
+        "contents": [
+            {
+                "title": "Leaf",
+                "description": "20/former X div comp player and TO for low ink.",
+                "imagePath": "images/Staff/c3b5e1f7de11d645fb1da6c5415b1fa5.png",
+                "twitter": ""
+            }
+        ]
+    }
 ]
