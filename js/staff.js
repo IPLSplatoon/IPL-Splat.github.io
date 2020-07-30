@@ -15,7 +15,7 @@ fetch('data/staff.json')
 						<p><%-staff.description%></p>
 						<%if (staff.twitter.length > 0) { %>
 							<div class="card-link">
-								<a href="https://twitter.com/<%=staff.twitter%>" target="_blank">
+								<a href="https://twitter.com/<%=staff.twitter%>" class="twitter-solid" target="_blank">
 									<i class="twitter-solid fab fa-twitter"></i>
 									@<%=staff.twitter%>
 								</a>
