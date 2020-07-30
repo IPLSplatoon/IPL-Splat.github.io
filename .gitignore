@@ -48,4 +48,5 @@ atlassian-ide-plugin.xml
 dataProcessor/secrets
 dataProcessor/output
 dataProcessor/holding
+dataProcessor/.idea
 
