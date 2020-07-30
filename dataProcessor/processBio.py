@@ -88,7 +88,7 @@ for lines in worksheetData:
     if lines["isStaff"] == "Yes":
         print("Outputting for: {}".format(lines["name"]))
         output["title"] = lines["name"]
-        output["description"] = lines["bio"]
+        output["description"] = (lines["bio"].replace("\n", "")).replace("\r", " ")
         staffID = hashlib.md5(lines["name"].encode("utf-8")).hexdigest()
         output["imagePath"] = "images/Staff/{}.png".format(staffID)
         output["twitter"] = lines["twitter"]
@@ -124,21 +124,21 @@ for lines in worksheetData:
         elif lines["header"] == "Former staff":
             former.append(output)
 
-# save json files
-with open('output/commentator.json', 'w') as file:
-    json.dump(sortBioLength(commentator), file)
-
-with open('output/former.json', 'w') as file:
-    json.dump(sortBioLength(former), file)
-
-with open('output/headTO.json', 'w') as file:
-    json.dump(sortBioLength(headTO), file)
-
-with open('output/orgHead.json', 'w') as file:
-    json.dump(sortBioLength(orgHead), file)
-
-with open('output/production.json', 'w') as file:
-    json.dump(sortBioLength(production), file)
+staffFile = [
+    {"elemClassName": "staff-layout-grid",
+     "contents": sortBioLength(staff)},
+    {"elemClassName": "org-head-grid",
+     "contents": sortBioLength(orgHead)},
+    {"elemClassName": "head-TO-grid",
+     "contents": sortBioLength(headTO)},
+    {"elemClassName": "production-grid",
+     "contents": sortBioLength(production)},
+    {"elemClassName": "commentator-grid",
+     "contents": sortBioLength(commentator)},
+    {"elemClassName": "former-staff-grid",
+     "contents": sortBioLength(former)}
+]
 
 with open('output/staff.json', 'w') as file:
-    json.dump(sortBioLength(staff), file)
+    json.dump(staffFile, file, indent=4)
+
