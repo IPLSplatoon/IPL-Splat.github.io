@@ -4,7 +4,7 @@ fetch('data/tournaments.json')
     })
     .then((data) => {
         // Work with JSON data here
-        console.log(data)// Let EJS create the HTML for each element in the above array for us
+        // Let EJS create the HTML for each element in the above array for us
         let tourneyElements = ejs.render(`
 	        <% tournaments.forEach(tournament => { %>
 	        <div class="card">
