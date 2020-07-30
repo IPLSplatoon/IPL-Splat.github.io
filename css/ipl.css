@@ -311,55 +311,6 @@ footer {
     }
 }
 
-/* Tournaments */
-
-.tournaments-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin: 25px;
-}
-
-.tournament {
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.tournament-description h3 {
-    font-size: 2em;
-    margin: 5px 0 5px 0;
-}
-
-.tournament-description p {
-    margin: 5px 0;
-}
-
-.tournament img {
-    width: 100px;
-    float: right;
-}
-
-@media (max-width: 900px) {
-    .tournaments-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .tournaments-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 320px) {
-    .tournaments-title {
-        /* don't go off screen we need you :( */
-        font-size: 2em;
-    }
-}
-
 /* Button styles */
 
 a.link-button.btn-green {
@@ -411,70 +362,74 @@ h2 {
     }
 }
 
-/*Staff Page*/
+/* Cards - used for tournaments and staff page */
 
-.staff-grid {
+.card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin: 25px;
 }
 
-.staff {
+.card {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     position: relative;
 }
 
-.staff-description h3 {
+.card-text h3 {
     font-size: 2em;
     margin: 5px 0 5px 0;
 }
 
-.staff-description h4 {
-    font-size: 1.5em;
-    margin: 5px 0 5px 0;
-}
-
-.staff-description h4:visited {
-    text-decoration: none;
-    font-size: 1.5em;
-    margin: 5px 0 5px 0;
-}
-
-.staff-description h4:link {
-    text-decoration: none;
-    font-size: 1.5em;
-    margin: 5px 0 5px 0;
-}
-
-.staff-description p {
+.card-text p {
     margin: 5px 0;
 }
 
-.staff img {
+.card img {
     border-radius: 50%;
     width: 100px;
     float: right;
+    margin: 5px;
+}
+
+.card-link {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.card-link a {
+    text-decoration: none;
 }
 
 @media (max-width: 900px) {
-    .staff-grid {
+    .card-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 576px) {
-    .staff-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 700px) {
+    .card img {
+        display: block;
+        width: 30%;
+        float: unset;
+        margin: 0 auto;
+    }
+
+    .card-text h3 {
+        text-align: center;
     }
 }
 
-@media (max-width: 320px) {
-    .staff-title {
+@media (max-width: 576px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
         /* don't go off screen we need you :( */
-        font-size: 2em;
+        font-size: 10vw;
     }
 }
 
@@ -483,8 +438,9 @@ footer{
     background-color: var(--iplGray);
     position: absolute;
     text-align: center;
-    width: 100%;
+    width: 98%;
     bottom: 0;
+    padding: 1%;
 }
 
 .padding-space{

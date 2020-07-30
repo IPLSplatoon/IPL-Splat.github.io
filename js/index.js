@@ -7,9 +7,9 @@ fetch('data/tournaments.json')
         console.log(data)// Let EJS create the HTML for each element in the above array for us
         let tourneyElements = ejs.render(`
 	        <% tournaments.forEach(tournament => { %>
-	        <div class="tournament">
+	        <div class="card">
 		        <img src="<%=tournament.imagePath%>">
-		        <div class="tournament-description">
+		        <div class="card-text">
 			        <h3><%=tournament.title%></h3>
 			        <p><%=tournament.description%></p>
 		        </div>
