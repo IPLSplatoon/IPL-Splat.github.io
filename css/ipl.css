@@ -124,12 +124,9 @@ nav {
 .page-content {
     margin-left: var(--sidebarWidth); /* match sidebar width */
     transition-duration: 0.25s;
-}
-
-footer {
-    background-color: var(--iplGray);
-    text-align: center;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .mobile-icons {
@@ -289,6 +286,10 @@ footer {
     margin-right: 10px;
 }
 
+.intro-text h2 {
+    margin: 0;
+}
+
 .intro-text p {
     font-size: 1.35em;
 }
@@ -344,15 +345,11 @@ a.link-button:hover {
 }
 
 h2 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.page-content > h2 {
     margin: 15px 25px;
+    font-size: 3em;
 }
 
-.page-content > h4 {
+h4 {
     margin: 15px 25px;
 }
 
@@ -436,18 +433,28 @@ h2 {
 }
 
 /* Footer */
-footer{
+
+footer {
     background-color: var(--iplGray);
-    position: absolute;
+    position: relative;
     text-align: center;
-    width: 98%;
     bottom: 0;
-    padding: 1%;
     color: white;
+    width: 100%;
+    padding: 2rem 0;
+    flex-shrink: 0;
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
+}
+
+footer h4 {
+    margin: 0;
 }
 
 .padding-space{
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .twitter-link:visited{
