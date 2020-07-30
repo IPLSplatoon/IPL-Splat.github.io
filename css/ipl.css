@@ -369,6 +369,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin: 25px;
+    align-items: flex-start;
 }
 
 .card {
