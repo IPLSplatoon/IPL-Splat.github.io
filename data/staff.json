@@ -33,6 +33,18 @@
                 "twitter": "Pianoducks"
             },
             {
+                "title": "Kaloseii",
+                "description": "Hey, I\u2019m Kalo! My goal is to help the competitive splatoon scene grow.",
+                "imagePath": "images/Staff/039b63ebbeb7bfaacd066ebc2ca62357.png",
+                "twitter": "Kaloseii"
+            },
+            {
+                "title": "gh0st",
+                "description": "gh0st | He/Him | I play Splatoon sometimes | gh0station#9213 ",
+                "imagePath": "images/Staff/e9679963a2c22de9032e8000338997dc.png",
+                "twitter": "gh0station"
+            },
+            {
                 "title": "Frosch",
                 "description": "Ice cream.",
                 "imagePath": "images/Staff/62f6ffb5fdc20b668a45ab10daf6c46a.png",
@@ -89,6 +101,12 @@
                 "description": "A Competitive Splatoon 2 player who has been working from the bottom up. I don't get lucky, I earn everything that has come my way. I coach, help, and play with the lower level competitive community a lot.",
                 "imagePath": "images/Staff/2d28ca7602793f6b9d5c6dd263f9b93e.png",
                 "twitter": "littlepetfrog"
+            },
+            {
+                "title": "Astro/Astrocities",
+                "description": "Former competitive comp Splatoon player, current commentator and TO.  I love long walks on the beach I guess?  Dunno what else goes in a bio...",
+                "imagePath": "images/Staff/44608e6abb55325c56754c38aa268494.png",
+                "twitter": "Astrocities"
             }
         ]
     },
