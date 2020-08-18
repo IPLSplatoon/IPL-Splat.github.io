@@ -3,6 +3,12 @@
         "elemClassName": "staff-layout-grid",
         "contents": [
             {
+                "title": "Blankit",
+                "description": "Hello! My name is Blankit, I am a competitive Splatoon 2 player. I'm an anchor(mostly Splatlings) player, but I can flex to midline weapons too. I've been playing Splatoon since it was on the Wii U and have been on many teams. Aside from Splatoon, I do enjoy playing other games for the Nintendo Switch, like Mario Kart 8 Deluxe.I'm a big animal lover (so show me your pet pics!) and I've been playing music for some time now, I mostly play Piano and Kalimba. I'm always open to chat and meeting new Splatoon peeps any time so don't be afraid to shoot me a DM  \\o/",
+                "imagePath": "images/Staff/fbc7c1d183a54a4e54ff7a156f66a812.png",
+                "twitter": "blan_kit"
+            },
+            {
                 "title": "Devvy",
                 "description": "Hey all! I am a 23 year old girl from the Canadian prairies. I am the captain and backline for the West Broadway Grillers since December 2018 when the comp team was formed. The Grillers clan however, did originate a year earlier when me and my local friends were just casual players at the time. I've taken 3 years of college to work my way into Journalism. While I wait to get accepted into the main course, I am taking an Office Administration course. Another thing about me is that I name my main weapons. For example Steve (Heavy Splatling) & Hugo (Hydra). ",
                 "imagePath": "images/Staff/480abdfd8edac6e9450e4bc27f31f551.png",
@@ -13,6 +19,18 @@
                 "description": "Proud sniper for Inkvaders, Low Ink participant, and volunteer staff member when the team doesn't play. Aside from competitive Splatoon, I like to create art, play Pokemon games, and write stories. Currently I'm studying computer science, and would one day like to work for the CIA or FBI. I help out with coding things around here. I'm also a prolific confetti thrower in Twitch stream chats and on discord <i>throws confetti</i>\ud83c\udf89",
                 "imagePath": "images/Staff/a48ac573551758b6a5f8d7edd8d6c38d.png",
                 "twitter": "ShadowDragon42"
+            },
+            {
+                "title": "starbiit",
+                "description": "Hihi! I am an artist and animator who has been playing the squid game competitively since 2017. I never made it to the top, but my friends and teammates have showed me the amazing things that the community can bring. As a shy person, I want to help bring that welcoming experience to new players!",
+                "imagePath": "images/Staff/f16741d6702d7d2a36de79bd5cacb961.png",
+                "twitter": "squidbiit"
+            },
+            {
+                "title": "KitsuneKeira",
+                "description": "Esports Organizer, Computer Engineer and Full-Time Kitsune. I'm scared of using anything that doesn't have Ink Armor attached to it. In my free time I staff various esports events, including a long history in the collegiate esports scene. Working to grow Splatoon in all its forms! ",
+                "imagePath": "images/Staff/1b0e73ee94056945d4e8b002ae5429cc.png",
+                "twitter": "KitsuneKeira"
             },
             {
                 "title": ".jpg",
@@ -97,12 +115,6 @@
                 "twitter": "Snek_FGC"
             },
             {
-                "title": "Froppy\u266a",
-                "description": "A Competitive Splatoon 2 player who has been working from the bottom up. I don't get lucky, I earn everything that has come my way. I coach, help, and play with the lower level competitive community a lot.",
-                "imagePath": "images/Staff/2d28ca7602793f6b9d5c6dd263f9b93e.png",
-                "twitter": "littlepetfrog"
-            },
-            {
                 "title": "Astro/Astrocities",
                 "description": "Former competitive comp Splatoon player, current commentator and TO.  I love long walks on the beach I guess?  Dunno what else goes in a bio...",
                 "imagePath": "images/Staff/44608e6abb55325c56754c38aa268494.png",
@@ -120,10 +132,22 @@
                 "twitter": "vlee888"
             },
             {
+                "title": "Ozei",
+                "description": "H-hello! I\u2019m Ozei (oo-zz-ay) but I also go by Kin and Nymph. An Australian self taught artist, furry and gamer pangender/nonbinary <i>(Any Pronouns)</i> whose interests is games, art , anime and cartoons.also Kraken Mare is cutie y/y!!",
+                "imagePath": "images/Staff/047cc48019833bd211165c719b7e1245.png",
+                "twitter": "Nymphir"
+            },
+            {
                 "title": "inkfarer",
                 "description": "I am Inkfarer - I do streaming and coding for IPL. I know a little bit of Japanese and I play a little bit of Splatoon. I have a neat website at <a href=\"https://inkfarer.com/\">inkfarer.com</a>.",
                 "imagePath": "images/Staff/345f7d19c0d789c969e299c02d3e688b.png",
                 "twitter": "inkfarer"
+            },
+            {
+                "title": "LeptoFlare",
+                "description": "Preemptively compensating for inadequacy. If you're curious who I am, check out my website!<blockquote><a href=\"https://lepto.tech\"><b>lepto.tech</b></a></blockquote>",
+                "imagePath": "images/Staff/0acb100f60eb7d1027cbb9e8711dfed7.png",
+                "twitter": ""
             },
             {
                 "title": "Seagull",
@@ -137,10 +161,22 @@
         "elemClassName": "commentator-grid",
         "contents": [
             {
+                "title": "Cyo",
+                "description": "German Splatoon2-Streamer and Commentator for DSB (german LUTI) and Low Ink. Playing competitive on Division 4 Level (Season X). Won Low Ink 06/20 w/ Trick or Treat (Boo, Poke, Mevlin).Also plays other stuff like chess (i'm such a badsquib with my 700 ELO xD) and rl sports.",
+                "imagePath": "images/Staff/e3cfcff1297022dcbddafc59ef983cd7.png",
+                "twitter": "InklingOnFire"
+            },
+            {
                 "title": "Popgun",
                 "description": "<ul> <li>Captain of Destiny Troops</li> <li>Husband of Ms.Popgun</li> <li>Commentator of Splatoon</li> <li>Eater of food</li> </ul>",
                 "imagePath": "images/Staff/822ca9c6e7e7e3368687f1a3885cfe18.png",
                 "twitter": "Mr_Popgun"
+            },
+            {
+                "title": "toxic",
+                "description": "I like video games and talking about video games. I just wanna make sure that I say words correctly and not mess up to much.  : )",
+                "imagePath": "images/Staff/15037c1b515e37a28a04bcbe719d5b71.png",
+                "twitter": "SameeeWBG"
             },
             {
                 "title": "Vantox",
@@ -153,6 +189,12 @@
     {
         "elemClassName": "former-staff-grid",
         "contents": [
+            {
+                "title": "Froppy\u266a",
+                "description": "A Competitive Splatoon 2 player who has been working from the bottom up. I don't get lucky, I earn everything that has come my way. I coach, help, and play with the lower level competitive community a lot.",
+                "imagePath": "images/Staff/2d28ca7602793f6b9d5c6dd263f9b93e.png",
+                "twitter": "littlepetfrog"
+            },
             {
                 "title": "Leaf",
                 "description": "20/former X div comp player and TO for low ink.",

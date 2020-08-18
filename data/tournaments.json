@@ -1,27 +1,22 @@
 [
   {
     "title":"Low Ink",
+    "description":"Low ink is a Splatoon tournament that is aimed at newer and lower level competitive teams. Our goal is to give teams a chance to get into the competitive scene and gain experience. High level teams may be barred from playing to preserve our ideology.",
+    "imagePath":"images/logo-low-ink.png"
+  },
+  {
+    "title":"Weekly",
     "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda placeat harum repellat quaerat optio quidem nostrum voluptas tenetur, laboriosam, voluptatibus laborum eveniet, praesentium debitis?",
     "imagePath":"images/logo-low-ink.png"
   },
   {
-    "title":"Low Ink",
+    "title":"Bi Weekly",
     "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda placeat harum repellat quaerat optio quidem nostrum voluptas tenetur, laboriosam, voluptatibus laborum eveniet, praesentium debitis?",
     "imagePath":"images/logo-low-ink.png"
   },
   {
-    "title":"Low Ink",
-    "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda placeat harum repellat quaerat optio quidem nostrum voluptas tenetur, laboriosam, voluptatibus laborum eveniet, praesentium debitis?",
-    "imagePath":"images/logo-low-ink.png"
-  },
-  {
-    "title":"Low Ink",
-    "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda placeat harum repellat quaerat optio quidem nostrum voluptas tenetur, laboriosam, voluptatibus laborum eveniet, praesentium debitis?",
-    "imagePath":"images/logo-low-ink.png"
-  },
-  {
-    "title":"Low Ink",
-    "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda placeat harum repellat quaerat optio quidem nostrum voluptas tenetur, laboriosam, voluptatibus laborum eveniet, praesentium debitis?",
-    "imagePath":"images/logo-low-ink.png"
+    "title":"The Unnamed Tournament",
+    "description":"IPL's infrequent tournament where we test things, break things and learn things. I just so happened we made it look professional somehow.",
+    "imagePath":"images/UT.png"
   }
 ]
