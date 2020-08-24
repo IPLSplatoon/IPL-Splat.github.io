@@ -123,6 +123,8 @@ for lines in worksheetData:
             staff.append(output)
         elif lines["header"] == "Former staff":
             former.append(output)
+        elif lines["header"] == "Guest Staff":
+            staff.append(output)
 
 staffFile = [
     {"elemClassName": "staff-layout-grid",
