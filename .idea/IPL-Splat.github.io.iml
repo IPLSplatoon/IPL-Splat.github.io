@@ -10,5 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="8e14df12b5" level="application" />
     <orderEntry type="library" name="materialize" level="application" />
+    <orderEntry type="library" name="bodymovin" level="application" />
+    <orderEntry type="library" name="animejs" level="application" />
   </component>
 </module>

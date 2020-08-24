@@ -1,0 +1,17 @@
+/* Redirect Pages */
+.redirect{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.redirect img{
+    width: 40%;
+}
+
+@media (max-width: 576px) {
+    /* For mobile phones */
+    .redirect img{
+        width: 60%;
+    }
+}

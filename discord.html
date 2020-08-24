@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>IPL</title>
+    <title>IPL Discord</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175906558-1"></script>
     <script>
@@ -14,6 +14,7 @@
     </script>
     <!--CSS Libraries and custom css-->
     <link rel="stylesheet" href="css/ipl.css">
+    <link rel="stylesheet" href="css/redirect.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e14df12b5.js" crossorigin="anonymous"></script>
@@ -25,6 +26,8 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1,
       minimum-scale=1, maximum-scale=1"/>
+    <!--Redirect-->
+    <meta http-equiv="refresh" content="2; URL=https://discord.gg/F7RaNUR" />
 </head>
 <body>
     <header class="site-header">
@@ -47,7 +50,7 @@
             <a href="https://twitter.com/LowInkSplatoon"><i class="fab fa-twitter sidebar-icon"></i><span>Twitter</span></a>
             <a href="https://www.patreon.com/lowinks"><i class="fab fa-patreon sidebar-icon"></i><span>Patreon</span></a>
             <a href="https://github.com/IPL-Splat"><i class="fab fa-github sidebar-icon"></i><span>GitHub</span></a>
-            <a href="discord.html"><i class="fab fa-discord sidebar-icon"></i><span>Discord</span></a>
+            <a href="#"><i class="fab fa-discord sidebar-icon"></i><span>Discord</span></a>
         </div>
     </header>
     <div class="page-content">
@@ -56,22 +59,12 @@
                 <div class="top-banner-image"></div>
                 <div class="top-banner-wrapper">
                     <h1 class="top-banner-text">Welcome to Inkling Performance Labs</h1>
-                    <a class="link-button btn-green" href="#tournaments">Tournaments</a>
                 </div>
             </div>
-            <div class="section intro-section">
-                <div class="intro-text">
-                    <h2>Who are we?</h2>
-                    <p>
-                        We are the fanciest, newest, and coolest organization around for
-                        competitive Splatoon 2! We host many tournements varing from weeklies,
-                        monthlies, and even invitationals of all formats!
-                    </p>
-                </div>
-                <iframe src="https://www.youtube.com/embed/pVMkqyaq9WE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="redirect">
+                <img src="images/radiaLoading.gif" alt="Radia floating in test tube">
+                <h1>Redirecting to Discord...</h1>
             </div>
-            <h2 class="card-title" id="tournaments">Tournaments</h2>
-            <div class="card-grid tournaments-grid"></div>
         </div>
 
         <div class="padding-space">&nbsp;</div>
@@ -80,9 +73,6 @@
             <h4 class="footer-text">© Inkling Performance Labs | Designed by the IPL team</h4>
         </footer>
     </div>
-
-    <script src="js/ejs/ejs.js"></script>
     <script src="js/ipl.js"></script>
-    <script src="js/index.js"></script>
 </body>
 </html>
