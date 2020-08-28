@@ -21,8 +21,14 @@
                 "twitter": "ShadowDragon42"
             },
             {
+                "title": "Carrot",
+                "description": "Hi, I'm Carrot! I\u2019m a competitive player as well as the leader of a Splatoon clan called Sploot Troops, which was originally started on Facebook. My knowledge of the Facebook community is what brought me into helping IPL reach new players.I also host Splatoon Locals in Ohio and TO some other tournaments online. When I'm not gaming, I'm usually drawing, painting, biking, hiking and food.",
+                "imagePath": "images/Staff/1ed10d1bb14ff1b1bf02aad5a5cdb052.png",
+                "twitter": "CarrotSwitch"
+            },
+            {
                 "title": "Grace",
-                "description": "<div class=\"grace\"><i>Throwing myself into bombs since 2003.</i> <br/> I'm one of the many Low Ink staff members, and I also help out with other IPL endeavors! You'll often see me playing Dead by Daylight or petting my bird, Buttercup, in between games. Don't yell at me in the helpdesk. I won't hesitate to cry.</div>",
+                "description": "<div class=\"grace\"><i>Throwing myself into bombs since 2003.</i><br/>I'm one of the many Low Ink staff members, and I also help out with other IPL endeavors! You'll often see me playing Dead by Daylight or petting my bird, Buttercup, in between games. Don't yell at me in the helpdesk. I won't hesitate to cry.</div>",
                 "imagePath": "images/Staff/68727d15820a0c2ebc29636a8ba6d666.png",
                 "twitter": "Tubnug"
             },
@@ -51,6 +57,12 @@
                 "twitter": "TotorobotSD"
             },
             {
+                "title": "Straw Sonder",
+                "description": "<b>Heya! Wassap, I'm Straw (:</b>I'm working on some graphics for the SoS tournament announcements! My messages are always open both on Discord and Twitter! ",
+                "imagePath": "images/Staff/2e936534e9802a48b47e69b27c373818.png",
+                "twitter": "StrawSonder"
+            },
+            {
                 "title": "Para!!",
                 "description": "Hi I'm Para!! I like drawing, making games, and playing splat.If you ever have questions about anything feel free to ask! I'm happy to help ^^",
                 "imagePath": "images/Staff/d55a0c284e4b51a084762a51f6f1f8dc.png",
@@ -61,6 +73,12 @@
                 "description": "Hey, I\u2019m Kalo! My goal is to help the competitive splatoon scene grow.",
                 "imagePath": "images/Staff/039b63ebbeb7bfaacd066ebc2ca62357.png",
                 "twitter": "Kaloseii"
+            },
+            {
+                "title": "Jeff",
+                "description": "Splatoon player for Assault and Pepper, and occasional programmer.",
+                "imagePath": "images/Staff/7f15f1ad99c489dc0314952535e424d5.png",
+                "twitter": ""
             },
             {
                 "title": "gh0st",
@@ -104,7 +122,7 @@
         "contents": [
             {
                 "title": "Skye",
-                "description": "Ello' I'm Skye I like to draw, stream, make videos and play games!<br>I've been around in the community since <i>January 2019</i>, been in competitive since <i>September 2019</i>, & have been Staffing tournaments since <i>March 2020</i>.</br><br>Usually I tend to lurk but if you approach me i'll definitely be willing to talk, since I like meeting new people and making new friends!</br> <br>\u2661Oh yea and I love working with the people in IPL that I get to work with at IPL\u2661</br>\u2661<i>uwu</i>\u2661",
+                "description": "Ello' I'm Skye I like to draw, stream, make videos and play games!<br>I've been around in the community since <i>January 2019</i>, been in competitive since <i>September 2019</i>, & have been Staffing tournaments since <i>March 2020</i>.</br><br>Usually I tend to lurk but if you approach me i'll definitely be willing to talk, since I like meeting new people and making new friends!</br> <br>\u2661Oh yea and I love working with the people that I get to work with at IPL\u2661</br>\u2661<i>uwu</i>\u2661",
                 "imagePath": "images/Staff/881f32366cabc700634e3df10bc7bee9.png",
                 "twitter": "SkyeTheDemon"
             },
@@ -132,9 +150,9 @@
         "elemClassName": "production-grid",
         "contents": [
             {
-                "title": "Vincent",
-                "description": "Hi there \ud83d\udc4b I'm Vincent. I'm the Technical Lead for IPL developing all the code based stuff you've seem, <i>including this website</i>. I study Computer Science at uni currently and on the side I'm a <b>STEM</b> ambassador, teaching kids on computers and code. Along with coding I help run Low Ink and numerous IRL events and conferences on the side. ",
-                "imagePath": "images/Staff/d3facf360f0b4f2d570c093e7e130210.png",
+                "title": "Vincent Lee",
+                "description": "Hi there \ud83d\udc4b I'm Vincent. I'm the Technical Lead for IPL developing all the code based stuff you've seem, <i>including this website</i>. I study Computer Science at uni currently and on the side I'm a <b>STEM</b> ambassador, teaching kids on computers and code. Along with coding I help run Low Ink and numerous IRL events and conferences on the side. I'm also the head TO of UT.",
+                "imagePath": "images/Staff/5b5267e579d51bd5e9250c37a93f3ef7.png",
                 "twitter": "vlee888"
             },
             {
@@ -167,6 +185,12 @@
         "elemClassName": "commentator-grid",
         "contents": [
             {
+                "title": "J-Wanaldee",
+                "description": "J-Wanaldee (jay-wuh-NAHL-dee) is a streamer and former competitive Splatoon 2 player who has transitioned into tournament organizing and commentating, primarily through her organization, Camp Wanaldee. When she\u2019s not TO-ing, she is most-likely writing and performing music as a professional singer/musician, playing over 7 instruments. ",
+                "imagePath": "images/Staff/b47143ab240532d682c1409ff435942a.png",
+                "twitter": "jwanaldee"
+            },
+            {
                 "title": "Cyo",
                 "description": "German Splatoon2-Streamer and Commentator for DSB (german LUTI) and Low Ink. Playing competitive on Division 4 Level (Season X). Won Low Ink 06/20 w/ Trick or Treat (Boo, Poke, Mevlin).Also plays other stuff like chess (i'm such a badsquib with my 700 ELO xD) and rl sports.",
                 "imagePath": "images/Staff/e3cfcff1297022dcbddafc59ef983cd7.png",
@@ -185,10 +209,28 @@
                 "twitter": "SameeeWBG"
             },
             {
+                "title": "Zzylard",
+                "description": "Ex-competitive division 1 Splatoon player. Main weapons: Bamboozler, Nautilus, Mini Splatling.",
+                "imagePath": "images/Staff/b754d18be1eda91a6b604e03aa687218.png",
+                "twitter": "Zzylard"
+            },
+            {
                 "title": "Vantox",
                 "description": "Hey i am Vantox and i am 15 Y/o and play Splatoon 2 CP myself and love to be Commentator^^",
                 "imagePath": "images/Staff/bd96576f2ae54ea611a71fdb592c3885.png",
                 "twitter": "VantoX_Spl"
+            },
+            {
+                "title": "Kerrie",
+                "description": "Former tournament and LAN competitor getting involved through commentating.",
+                "imagePath": "images/Staff/df4a6ed86bf4f9bd341748449eac77cf.png",
+                "twitter": "itsyourwaifu"
+            },
+            {
+                "title": "Wasson",
+                "description": "I do be commentating doe",
+                "imagePath": "images/Staff/dd599d3d6281a4ef45e79359102b861e.png",
+                "twitter": "Wasson_fam"
             }
         ]
     },
