@@ -5,14 +5,14 @@
     "imagePath":"images/logo-low-ink.png"
   },
   {
-    "title":"Weekly",
-    "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda placeat harum repellat quaerat optio quidem nostrum voluptas tenetur, laboriosam, voluptatibus laborum eveniet, praesentium debitis?",
-    "imagePath":"images/logo-low-ink.png"
+    "title":"Swim or Sink",
+    "description":"Swim or Sink is a midweek tournament series occurring every Wednesday night aimed providing players with competitive practice against other teams on a weekly basis.  The series will track stats so teams can see their progress from week to week, as well as help them establish connections with similarly skilled opponents.",
+    "imagePath":"images/Sinkorswim.png"
   },
   {
-    "title":"Bi Weekly",
-    "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae assumenda placeat harum repellat quaerat optio quidem nostrum voluptas tenetur, laboriosam, voluptatibus laborum eveniet, praesentium debitis?",
-    "imagePath":"images/logo-low-ink.png"
+    "title":"Testing Grounds",
+    "description":"A Bi-weekly Tournament Aimed To Foster Improvement.",
+    "imagePath":"images/TG.png"
   },
   {
     "title":"The Unnamed Tournament",
