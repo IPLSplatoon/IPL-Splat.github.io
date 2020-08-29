@@ -1,0 +1,22 @@
+[
+  {
+    "title":"Low Ink",
+    "description":"Low ink is a Splatoon tournament that is aimed at newer and lower level competitive teams. Our goal is to give teams a chance to get into the competitive scene and gain experience. High level teams may be barred from playing to preserve our ideology.",
+    "imagePath":"images/logo-low-ink.png"
+  },
+  {
+    "title":"Swim or Sink",
+    "description":"Swim or Sink is a midweek tournament series occurring every Wednesday night aimed providing players with competitive practice against other teams on a weekly basis.  The series will track stats so teams can see their progress from week to week, as well as help them establish connections with similarly skilled opponents.",
+    "imagePath":"images/Sinkorswim.png"
+  },
+  {
+    "title":"Testing Grounds",
+    "description":"A Bi-weekly Tournament Aimed To Foster Improvement.",
+    "imagePath":"images/TG.png"
+  },
+  {
+    "title":"The Unnamed Tournament",
+    "description":"IPL's infrequent tournament where we test things, break things and learn things. It just so happened we made it look professional somehow.",
+    "imagePath":"images/UT.png"
+  }
+]

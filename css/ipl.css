@@ -1,49 +1,208 @@
 * {
-    font-family: 'Roboto', sans-serif; !important;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
+    position: relative;
+    background-color: var(--separateGrey);
+    min-height: 100vh;
 }
 
 :root {
     --iplBlack: #2d2d2d;
     --iplGreen: #09a100;
+    --iplGreenHover: #056E00;
     --iplYellow: #FFBB01;
     --iplGray: #848C8E;
     --iplLightGrey: #D8DBE2;
-    --seperateGrey: #F8F8F8;
-    --white: #FFFFFF;
+    --separateGrey: #F8F8F8;
+
+    --sidebarExpandedWidth: 160px;
+    --sidebarWidth: 55px;
 }
 
-.button{
-    background-color: var(--iplGreen)
+.button {
+    background-color: var(--iplGreen);
 }
 
-footer{
-    background-color: var(--iplGray);
-    alignment: center;
+/* navigation */
+
+header {
+    width: var(--sidebarWidth);
+    background-color: var(--iplBlack);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition-duration: 0.25s;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    z-index: 999;
+    top: 0;
+}
+
+header::-webkit-scrollbar {
+    display: none;
+}
+
+header:hover {
+    width: var(--sidebarExpandedWidth);
+}
+
+header:hover nav a span, header:hover .sidebar-socials a span {
+    /* Text labels on icons */
+    text-indent: 0;
+    opacity: 1;
+}
+
+.sidebar-icon {
+    width: 40px;
+    font-size: 30px;
+    color: var(--iplGray);
     text-align: center;
-    display: inline-block;
+    background-color: var(--iplBlack);
+    padding: 0 7.5px;
 }
 
-.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy{
-    color: var(--white);
+.icon-battlefy {
+    font-size: 40px !important; /* this icon is weird */
 }
 
-.fa-youtube:hover{
+.battlefy-link {
+    margin-bottom: 2px !important;
+}
+
+img.sidebar-icon {
+    width: 40px;
+}
+
+.sidebar-socials, nav {
+    /* style containers for links */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+nav a, .sidebar-socials a {
+    /* style links, which contain icons and their labels */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    margin-bottom: 15px;
+}
+
+nav a span {
+    /* sidebar navigation link labels */
+    color: var(--iplGray);
+}
+
+.sidebar-socials a span {
+    /* sidebar social media link labels */
+    color: white;
+}
+
+nav a span, .sidebar-socials a span {
+    text-decoration: none;
+    text-indent: -1em;
+    display: block;
+    transition-duration: 250ms;
+    font-weight: 600;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+.page-content {
+    margin-left: var(--sidebarWidth); /* match sidebar width */
+    transition-duration: 0.25s;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.mobile-icons {
+    display: none;
+    color: white;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+}
+
+.mobile-icons i {
+    margin-right: 15px;
+}
+
+@media (max-width: 576px) {
+    /* small baby phone screen */
+    .page-content {
+        margin-left: 0;
+        margin-top: 45px;
+    }
+
+    header {
+        width: 100%;
+        height: 45px;
+        justify-content: flex-start;
+        overflow-y: hidden;
+    }
+
+    header:hover {
+        width: 100%;
+    }
+
+    .mobile-icons {
+        display: flex;
+    }
+
+    nav a span, .sidebar-socials a span {
+        text-indent: 0;
+        opacity: 1;
+    }
+
+    .sidebar-socials .sidebar-icon {
+        font-size: 20px;
+    }
+
+    nav > a:first-child {
+        display: none;
+    }
+}
+
+/* Icon colours */
+
+.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy, .fa-twitch, .fa-github {
+    color: white;
+    transition-duration: 0.25s;
+}
+
+.fa-youtube:hover {
     color: #FF0000;
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
     color: #1DA1F2;
 }
 
-.fa-discord:hover{
+.twitter-solid {
+    color: #1DA1F2;
+}
+
+.fa-discord:hover {
     color: #7289DA;
 }
 
-.fa-patreon:hover{
+.fa-patreon:hover {
     color: #f86754;
 }
 
@@ -51,6 +210,253 @@ footer{
     color: #dd4b5e;
 }
 
+.fa-twitch:hover {
+    color: #9146FF;
+}
+
+.fa-github:hover {
+    color: #b4b5b6;
+}
+
 .icon-footer{
     font-size: 65px;
+}
+
+/* welcome image */
+
+.top-banner {
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.top-banner-image {
+    background-image: url('../images/orgBanner.png');
+    background-size: cover;
+    background-position: center center;
+    filter: opacity(30%);
+    height: inherit;
+    z-index: -10;
+}
+
+.top-banner-text {
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
+
+.top-banner-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-banner-wrapper a {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Who are we? */
+
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 252px;
+    margin: 0 !important;
+    /* clip path only shows the shadow on one side of the element */
+    box-shadow: 0 0 10px var(--iplBlack);
+    clip-path: inset(0 0 -10px 0);
+}
+
+.intro-section iframe {
+    max-width: 300px;
+    max-height: 169px;
+    position: relative;
+    align-self: flex-start;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.intro-text {
+    margin-right: 10px;
+}
+
+.intro-text h2 {
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.35em;
+}
+
+@media (max-width: 800px) {
+    .intro-section {
+        flex-direction: column;
+    }
+
+    .intro-section iframe {
+        margin-left: unset;
+        align-self: center;
+    }
+}
+
+@media (max-width: 320px) {
+    /* I don't like this... helps the iframe scale better on
+    extra smol devices */
+    .intro-section iframe {
+        align-self: unset;
+    }
+}
+
+/* Button styles */
+
+a.link-button.btn-green {
+    background-color: var(--iplGreen);
+}
+
+a.link-button.btn-green:hover {
+    background-color: var(--iplGreenHover);
+}
+
+a.link-button {
+    background-color: var(--iplBlack);
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition-duration: 100ms;
+}
+
+a.link-button:hover {
+    background-color: black;
+}
+
+/* Misc. utility styles */
+
+.section {
+    margin: 25px;
+    background-color: white;
+    padding: 15px 30px;
+}
+
+h2 {
+    margin: 15px 25px;
+    font-size: 3em;
+}
+
+h4 {
+    margin: 15px 25px;
+}
+
+@media (max-width: 576px) {
+    .section {
+        margin: 5px;
+        padding: 10px;
+    }
+}
+
+/* Cards - used for tournaments and staff page */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px;
+    align-items: flex-start;
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-text h3 {
+    font-size: 2em;
+    margin: 5px 0 5px 0;
+}
+
+.card-text p {
+    margin: 5px 0;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    float: right;
+    margin: 5px;
+}
+
+.card-link {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.card-link a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .card img {
+        display: block;
+        width: 30%;
+        float: unset;
+        margin: 0 auto;
+    }
+
+    .card-text h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
+        /* don't go off screen we need you :( */
+        font-size: 10vw;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--iplGray);
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 2rem 0;
+    flex-shrink: 0;
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+.padding-space{
+    padding: 1.5rem;
+}
+
+.twitter-link:visited{
+    text-decoration: none;
 }
