@@ -181,7 +181,7 @@ nav {
 
 /* Icon colours */
 
-.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy, .fa-twitch, .fa-github {
+.fa-youtube, .fa-twitter, .fa-patreon, .fa-discord, .icon-battlefy, .fa-twitch, .fa-github, .fa-facebook-f{
     color: white;
     transition-duration: 0.25s;
 }
@@ -218,6 +218,10 @@ nav {
     color: #b4b5b6;
 }
 
+.fa-facebook-f:hover {
+    color: #4267B2;
+}
+
 .icon-footer{
     font-size: 65px;
 }
@@ -232,6 +236,15 @@ nav {
 
 .top-banner-image {
     background-image: url('../images/orgBanner.png');
+    background-size: cover;
+    background-position: center center;
+    filter: opacity(30%);
+    height: inherit;
+    z-index: -10;
+}
+
+.staff-banner-image {
+    background-image: url('../images/staffBanner.png');
     background-size: cover;
     background-position: center center;
     filter: opacity(30%);
