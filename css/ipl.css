@@ -38,7 +38,7 @@ header {
     position: fixed;
     align-items: flex-start;
     justify-content: space-between;
-    transition-duration: 0.25s;
+    transition-duration: 150ms;
     overflow-x: hidden;
     scrollbar-width: thin;
     z-index: 999;
@@ -74,6 +74,7 @@ header:hover nav a span, header:hover .sidebar-socials a span {
 
 .battlefy-link {
     margin-bottom: 2px !important;
+    margin-top: -13px !important;
 }
 
 img.sidebar-icon {
@@ -111,7 +112,7 @@ nav a span, .sidebar-socials a span {
     text-decoration: none;
     text-indent: -1em;
     display: block;
-    transition-duration: 250ms;
+    transition-duration: 150ms;
     font-weight: 600;
     opacity: 0;
     z-index: -1;
@@ -123,7 +124,7 @@ nav {
 
 .page-content {
     margin-left: var(--sidebarWidth); /* match sidebar width */
-    transition-duration: 0.25s;
+    transition-duration: 150ms;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -175,6 +176,14 @@ nav {
     }
 
     nav > a:first-child {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .sidebar-socials {
         display: none;
     }
 }
