@@ -33,9 +33,13 @@ window.addEventListener('resize', () => {
         if (!mobileMenuShown) {
             headerElem.style.height = '45px';
         }
+        document.querySelector('nav').style.display = 'none';
+        document.querySelector('.sidebar-socials').style.display = 'none';
     } else {
         pageContent.style.marginLeft = sidebarWidth;
         headerElem.style.height = '100%';
+        document.querySelector('nav').style.display = 'flex';
+        document.querySelector('.sidebar-socials').style.display = 'flex';
     }
 });
 
@@ -43,10 +47,19 @@ function toggleMobileMenu() {
     if (!mobileMenuShown) {
         headerElem.style.height = '100%';
         headerElem.style.overflowY = 'visible'
+
+        // Fix for Safari - works fine but could be smoothed out further
+        document.querySelector('nav').style.display = 'flex';
+        document.querySelector('.sidebar-socials').style.display = 'flex';
+
         mobileMenuShown = true;
     } else {
         headerElem.style.height = '45px';
         headerElem.style.overflowY = 'hidden'
+
+        document.querySelector('nav').style.display = 'none';
+        document.querySelector('.sidebar-socials').style.display = 'none';
+
         mobileMenuShown = false;
     }
 }
