@@ -44,6 +44,9 @@ window.addEventListener('resize', () => {
 });
 
 function toggleMobileMenu() {
+    // Do nothing if we're on desktop
+    if (window.innerWidth > 576) return;
+
     if (!mobileMenuShown) {
         headerElem.style.height = '100%';
         headerElem.style.overflowY = 'visible'
