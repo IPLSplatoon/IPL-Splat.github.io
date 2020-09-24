@@ -25,6 +25,15 @@ def crop_image(image):
     return image
 
 
+def resize_image(image):
+    width, height = image.size
+    new_width = 500
+    if width < new_width:
+        return image
+    new_height = new_width * height / width
+    return image.resize((new_width, int(new_height)), Image.ANTIALIAS)
+
+
 def LongestBio(section: list) -> int:
     longestBio = 0
     for items in section:
@@ -82,16 +91,20 @@ headTO = []
 orgHead = []
 production = []
 staff = []
+artists = []
 
 for lines in worksheetData:
     output = {}
     if lines["isStaff"] == "Yes":
         print("Outputting for: {}".format(lines["name"]))
-        output["title"] = lines["name"]
-        output["description"] = (lines["bio"].replace("\n", "")).replace("\r", " ")
         staffID = hashlib.md5(lines["name"].encode("utf-8")).hexdigest()
-        output["imagePath"] = "images/Staff/{}.png".format(staffID)
-        output["twitter"] = lines["twitter"]
+        output = {
+            "title": lines["name"],
+            "description": (lines["bio"].replace("\n", "")).replace("\r", " "),
+            "imagePath": "images/Staff/{}.png".format(staffID),
+            "twitter": lines["twitter"],
+            "credit": lines["credits"]
+        }
 
         # Obtains image from google drive
         imageID = (lines["image"].split("?id="))[1]  # get the G Drive file ID from share
@@ -105,6 +118,8 @@ for lines in worksheetData:
 
         # Crops image to be 1:1
         staff_image = crop_image(Image.open("holding/{}.png".format(staffID)))
+        staff_image = resize_image(staff_image)
+        staff_image = staff_image.convert(mode='P', palette=Image.ADAPTIVE)
         staff_image.save("output/images/{}.png".format(staffID))
         staff_image.close()
 
@@ -125,6 +140,8 @@ for lines in worksheetData:
             former.append(output)
         elif lines["header"] == "Guest Staff":
             staff.append(output)
+        elif lines["header"] == "Artist":
+            artists.append(output)
 
 staffFile = [
     {"elemClassName": "staff-layout-grid",
@@ -138,7 +155,9 @@ staffFile = [
     {"elemClassName": "commentator-grid",
      "contents": sortBioLength(commentator)},
     {"elemClassName": "former-staff-grid",
-     "contents": sortBioLength(former)}
+     "contents": sortBioLength(former)},
+    {"elemClassName": "artists-staff-grid",
+     "contents": sortBioLength(artists)}
 ]
 
 with open('output/staff.json', 'w') as file:
