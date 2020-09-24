@@ -95,7 +95,7 @@ artists = []
 
 for lines in worksheetData:
     output = {}
-    if lines["isStaff"] == "Yes":
+    if lines["isStaff"] in ["Yes (Staff, temp, invite)", "Yes"]:
         print("Outputting for: {}".format(lines["name"]))
         staffID = hashlib.md5(lines["name"].encode("utf-8")).hexdigest()
         output = {
@@ -161,5 +161,5 @@ staffFile = [
 ]
 
 with open('output/staff.json', 'w') as file:
-    json.dump(staffFile, file, indent=4)
+    json.dump(staffFile, file)
 

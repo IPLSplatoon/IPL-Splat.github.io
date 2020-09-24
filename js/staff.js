@@ -12,6 +12,9 @@ fetch('data/staff.json')
 					<img src="<%=staff.imagePath%>">
 					<div class="card-text">
 						<h3><%=staff.title%></h3>
+						<%if (staff.credit.length > 0) { %>
+							<h4><%=staff.credit%></h4>
+						<% } %>
 						<p><%-staff.description%></p>
 						<%if (staff.twitter.length > 0) { %>
 							<div class="card-link">
