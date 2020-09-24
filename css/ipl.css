@@ -409,6 +409,12 @@ h4 {
     overflow-wrap: anywhere;
 }
 
+.card-text h4 {
+    margin: 5px 0 5px 0;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
 .card-text p {
     margin: 5px 0;
 }
