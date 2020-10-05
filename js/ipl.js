@@ -32,9 +32,9 @@ window.addEventListener('resize', () => {
         pageContent.style.marginLeft = '0px';
         if (!mobileMenuShown) {
             headerElem.style.height = '45px';
+            document.querySelector('nav').style.display = 'none';
+            document.querySelector('.sidebar-socials').style.display = 'none';
         }
-        document.querySelector('nav').style.display = 'none';
-        document.querySelector('.sidebar-socials').style.display = 'none';
     } else {
         pageContent.style.marginLeft = sidebarWidth;
         headerElem.style.height = '100%';
