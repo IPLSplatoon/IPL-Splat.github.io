@@ -49,4 +49,5 @@ dataProcessor/secrets
 dataProcessor/output
 dataProcessor/holding
 dataProcessor/.idea
+dataProcessor/venv
 
