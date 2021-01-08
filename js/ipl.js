@@ -11,7 +11,7 @@ headerElem.addEventListener('mouseover', () => {
 
     // I'm like 90% sure this can't be done with css
     if (window.innerWidth > 576) {
-        let sidebarExpandedWidth = '160px';
+        let sidebarExpandedWidth = '170px';
         pageContent.style.marginLeft = sidebarExpandedWidth;
     }
 });

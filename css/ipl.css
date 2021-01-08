@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Manrope', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -19,12 +19,17 @@ body {
     --iplLightGrey: #D8DBE2;
     --separateGrey: #F8F8F8;
 
-    --sidebarExpandedWidth: 160px;
+    --sidebarExpandedWidth: 170px;
     --sidebarWidth: 55px;
 }
 
 .button {
     background-color: var(--iplGreen);
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 /* navigation */
@@ -264,7 +269,7 @@ nav {
 }
 
 .top-banner-text {
-    font-weight: 900;
+    font-weight: 800;
     font-size: 2em;
     text-align: center;
     margin: 0;
@@ -406,13 +411,16 @@ h4 {
 
 .card-text h3 {
     font-size: 1.75em;
-    margin: 5px 0 5px 0;
+    margin: 10px 0;
     text-align: center;
     overflow-wrap: anywhere;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2em;
 }
 
 .card-text h4 {
-    margin: 5px 0 5px 0;
+    margin: 0;
+    margin-bottom: 10px;
     text-align: center;
     overflow-wrap: anywhere;
 }
@@ -425,8 +433,7 @@ h4 {
     border-radius: 50%;
     width: 100px;
     display: block;
-    margin: 5px;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
 }
 
 .card-link {
