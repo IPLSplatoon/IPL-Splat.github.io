@@ -9,7 +9,7 @@ fetch('data/staff.json')
 			let elements = ejs.render(`
 				<% staffs.forEach(staff => { %>
 				<div class="card">
-					<img src="<%=staff.imagePath%>">
+					<img src="<%=staff.imagePath%>" alt="Profile picture for <%=staff.title%>">
 					<div class="card-text">
 						<h3><%=staff.title%></h3>
 						<%if (staff.credit.length > 0) { %>
