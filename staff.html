@@ -12,6 +12,7 @@
 
         gtag('config', 'UA-175906558-1');
     </script>
+
     <!--CSS Libraries and custom css-->
     <link rel="stylesheet" href="css/ipl.css">
     <link rel="stylesheet" href="css/staff.css">
@@ -49,36 +50,50 @@
     <meta property="twitter:image" content="https://iplabs.ink/images/logo.png">
 </head>
 <body>
-<header class="site-header">
-    <div class="mobile-icons">
-        <a href="/"><img class="sidebar-icon" src="images/logo.png" alt="IPL Logo"></a>
-        <i class="fas fa-bars" onclick="toggleMobileMenu()"></i>
-    </div>
-    <nav>
-        <a href="/"><img class="ipl-sidebar-logo sidebar-icon" src="images/logo.png" alt="IPL Logo"><span>Home</span></a>
-        <a href="/#tournaments"><i class="fas fa-trophy sidebar-icon"></i><span>Tournaments</span></a>
-        <a href="/staff"><i class="fas fa-user sidebar-icon"></i><span>Staff</span></a>
-    </nav>
-    <div class="sidebar-socials">
-        <a href="/discord" class="sidebar-discord"><i class="fab fa-discord sidebar-icon"></i><span>Discord</span></a>
-        <a href="https://battlefy.com/inkling-performance-labs" class="battlefy-link sidebar-battlefy"><i class="icon-battlefy sidebar-icon"></i><span>Battlefy</span></a>
-        <a href="https://www.youtube.com/channel/UCFRVQSUskcsB5NjjIZKkWTA" class="sidebar-youtube"><i class="fab fa-youtube sidebar-icon"></i><span>YouTube</span></a>
-        <a href="https://www.twitch.tv/IPLSplatoon" class="sidebar-twitch"><i class="fab fa-twitch sidebar-icon"></i><span>Twitch</span></a>
-        <a href="https://twitter.com/IPLSplatoon" class="sidebar-twitter"><i class="fab fa-twitter sidebar-icon"></i><span>Twitter</span></a>
-        <a href="https://www.patreon.com/IPLSplatoon" class="sidebar-patreon"><i class="fab fa-patreon sidebar-icon"></i><span>Patreon</span></a>
-        <a href="https://github.com/IPL-Splat" class="sidebar-github"><i class="fab fa-github sidebar-icon"></i><span>GitHub</span></a>
-        <a href="https://www.facebook.com/IPLSplatoon/" class="sidebar-facebook"><i class="fab fa-facebook-f sidebar-icon"></i><span>Facebook</span></a>
-    </div>
-</header>
-<div class="page-content">
-    <div class="page-wrapper">
-        <div class="top-banner">
-            <div class="staff-banner-image"></div>
-            <div class="top-banner-wrapper">
-                <h1 class="top-banner-text">Staff</h1>
+    <header class="site-header">
+        <div class="header-image header-image-staff"></div>
+        <div class="header-content-wrapper md">
+            <div class="header-top">
+                <a href="/" class="header-ipl-logo-link">
+                    <div class="header-ipl-logo">
+                        <img src="images/logo.png">
+                        <div>
+                            Inkling<br>
+                            Performance<br>
+                            Labs
+                        </div>
+                    </div>
+                </a>
+    
+                <div class="socials-nav-wrapper" aria-expanded="false">
+                    <div class="header-nav">
+                        <a href="/staff">Staff</a>
+                        <a href="#tournaments">Tournaments</a>
+                    </div>
+                    <div class="header-socials">
+                        <a href="/discord" class="header-discord header-icon" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://battlefy.com/inkling-performance-labs" class="battlefy-link header-battlefy header-icon" title="Battlefy"><i class="icon-battlefy"></i></a>
+                        <a href="https://www.youtube.com/channel/UCFRVQSUskcsB5NjjIZKkWTA" class="header-youtube header-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.twitch.tv/IPLSplatoon" class="header-twitch header-icon" title="Twitch"><i class="fab fa-twitch"></i></a>
+                        <a href="https://twitter.com/IPLSplatoon" class="header-twitter header-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.patreon.com/IPLSplatoon" class="header-patreon header-icon" title="Patreon"><i class="fab fa-patreon"></i></a>
+                        <a href="https://github.com/IPL-Splat" class="header-github header-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/IPLSplatoon/" class="header-facebook header-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
+                </div>
+            </div>
+            <div class="header-text-wrapper">
+                <div class="header-big-text">
+                    <span class="header-text-staff">Staff</span>
+                </div>
             </div>
         </div>
-
+    </header>
+    <div class="page-wrapper">
         <div class="width-wrapper">
             <h2 class="card-title">Organisation Heads</h2>
             <div class="card-grid org-head-grid"></div>
@@ -110,7 +125,6 @@
     <footer>
         <h4 class="footer-text">© Inkling Performance Labs | Designed by the IPL team</h4>
     </footer>
-</div>
 
 <script src="js/ejs/ejs.js"></script>
 <script src="js/ipl.js"></script>
