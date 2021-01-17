@@ -230,6 +230,7 @@ header {
 @media (max-width: 800px) {
     .socials-nav-wrapper[aria-expanded="false"] {
         opacity: 0;
+        visibility: hidden;
     }
 
     .socials-nav-wrapper {
