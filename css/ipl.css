@@ -317,6 +317,16 @@ header {
         margin-right: 25px;
     }
 
+    .mobile-menu-btn.menu-expanded {
+        color: white;
+        transition-duration: 100ms;
+    }
+
+    .header-ipl-logo div.menu-expanded {
+        color: white;
+        transition-duration: 100ms;
+    }
+
     .header-ipl-logo-link {
         z-index: 10;
         margin-left: 15px;
