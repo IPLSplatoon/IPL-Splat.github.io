@@ -8,7 +8,7 @@ fetch('data/tournaments.json')
         let tourneyElements = ejs.render(`
 	        <% tournaments.forEach(tournament => { %>
 	        <div class="card">
-		        <img src="<%=tournament.imagePath%>">
+		        <img src="<%=tournament.imagePath%>" alt="Icon for <%=tournament.title%>">
 		        <div class="card-text">
 			        <h3><%=tournament.title%></h3>
 			        <p><%=tournament.description%></p>
