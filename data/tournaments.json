@@ -5,11 +5,6 @@
     "imagePath":"images/logo-low-ink.png"
   },
   {
-    "title":"Swim or Sink",
-    "description":"Swim or Sink is a weekly tournament series aimed at providing players with practice against other teams.",
-    "imagePath":"images/Sinkorswim.png"
-  },
-  {
     "title":"Testing Grounds",
     "description":"Testing Grounds is a bi-weekly tournament running on Friday nights. The series is aimed to give teams and viewers a platform for finding and testing new ideas for tournament play as well as get more involved with competitive Splatoon",
     "imagePath":"images/TG.png"
@@ -20,8 +15,23 @@
     "imagePath":"images/UT.png"
   },
   {
+    "title":"Swim or Sink",
+    "description":"Swim or Sink is a weekly tournament series aimed at providing players with practice against other teams.",
+    "imagePath":"images/Sinkorswim.png"
+  },
+  {
    "title":"High Ink",
    "description":"The Low Ink invitational! Winners from Low Ink are invited to play!",
    "imagePath":"images/HighInkLogo.png"
+  },
+  {
+    "title":"Tourney 6",
+    "description":"Coming Soon!",
+    "imagePath":"images/t6.png"
+  },
+  {
+    "title":"Tourney 7",
+    "description":"Coming Soon!",
+    "imagePath":"images/t7.png"
   }
 ]
