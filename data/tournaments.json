@@ -10,9 +10,19 @@
     "imagePath":"images/TG.png"
   },
   {
+    "title":"Reef Rushdown",
+    "description":"IPL's bi-weekly for Oceanic Region! Striving to bring a consistent, quality tournament for an underserved part of the community (Oceania) to participate and improve in.",
+    "imagePath":"images/RR.png"
+  },
+  {
     "title":"The Unnamed Tournament",
     "description":"IPL's infrequent tournament where we test things, break things and learn things. It just so happened we made it look professional somehow.",
     "imagePath":"images/UT.png"
+  },
+  {
+    "title":"King of the Castle",
+    "description":"IPL's bi-weekly tournament running on Friday night for Europe, Aimed for providing practice to players and teams.",
+    "imagePath":"images/KC.png"
   },
   {
     "title":"Swim or Sink",
@@ -23,15 +33,5 @@
    "title":"High Ink",
    "description":"The Low Ink invitational! Winners from Low Ink are invited to play!",
    "imagePath":"images/HighInkLogo.png"
-  },
-  {
-    "title":"Tourney 6",
-    "description":"Coming Soon!",
-    "imagePath":"images/t6.png"
-  },
-  {
-    "title":"Tourney 7",
-    "description":"Coming Soon!",
-    "imagePath":"images/t7.png"
   }
 ]
