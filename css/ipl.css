@@ -19,6 +19,7 @@ body {
     --iplTextColor: #2d2d2d;
     --iplBackgroundAlpha: rgba(255, 255, 255, 0.85);
     --iplNavHover: rgba(34, 34, 34, 0.10);
+    --headerIconColor: #2d2d2d;
 
     --iplBlack: #2d2d2d;
     --iplGreen: #09a100;
@@ -38,6 +39,7 @@ body {
         --iplTextColor: white;
         --iplBackgroundAlpha: rgba(34, 34, 34, 0.85);
         --iplNavHover: rgba(255, 255, 255, 0.10);
+        --headerIconColor: white;
     }
 }
 
@@ -225,9 +227,15 @@ header {
     color: var(--iplTextColor);
     font-size: 2em;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
+    :root {
+        --headerIconColor: white;
+        --iplNavHover: rgba(255, 255, 255, 0.10);
+    }
+
     .socials-nav-wrapper[aria-expanded="false"] {
         opacity: 0;
         visibility: hidden;
@@ -243,6 +251,7 @@ header {
         padding: 5px;
         opacity: 1;
         transition-duration: 100ms;
+        border-radius: 8px;
     }
 
     .header-nav {
@@ -255,12 +264,8 @@ header {
 
     .header-nav a {
         margin: 2.5px 5px;
-        padding: 0;
+        padding: 0 10px;
         color: white;
-    }
-
-    .header-icon {
-        color: white !important;
     }
 
     .header-socials {
@@ -304,6 +309,7 @@ header {
         top: -25px;
         z-index: 9;
         right: 0;
+        border-radius: 0;
     }
 
     .header-content-wrapper {
@@ -391,7 +397,7 @@ header {
 }
 
 .header-icon {
-    color: var(--iplTextColor);
+    color: var(--headerIconColor);
     transition-duration: 100ms;
     border-radius: 2px;
 }
