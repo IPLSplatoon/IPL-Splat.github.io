@@ -163,7 +163,7 @@ header {
 }
 
 .big-ipl-text {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 2em;
     line-height: 100%;
@@ -178,7 +178,7 @@ header {
 
 .header-text-staff {
     font-size: 2em;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 
@@ -263,7 +263,7 @@ header {
     }
 
     .header-nav a {
-        margin: 2.5px 5px;
+        margin: 3px 5px;
         padding: 0 10px;
         color: white;
     }
@@ -439,7 +439,7 @@ a.link-button {
     text-decoration: none;
     transition-duration: 100ms;
     display: inline-block;
-    margin: 2.5px;
+    margin: 3px;
 }
 
 a.link-button:hover {
@@ -520,8 +520,7 @@ h1, h2, h3, h4, p {
 }
 
 .card-text h4 {
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
     text-align: center;
     overflow-wrap: anywhere;
 }
