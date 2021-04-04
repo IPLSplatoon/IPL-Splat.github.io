@@ -28,6 +28,7 @@ fetch('data/staff.json')
 				</div>
 				<% }) %>
 			`, {staffs: grid.contents});
-			document.querySelector(`.${grid.elemClassName}`).innerHTML = elements;
+			document.querySelector(`.${grid.elemClassName}`).innerHTML += elements;
+			new Colcade(`.${grid.elemClassName}`, {columns: '.col', items: '.card'});
 		});
     });
