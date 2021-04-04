@@ -20,6 +20,7 @@ body {
     --iplBackgroundAlpha: rgba(255, 255, 255, 0.85);
     --iplNavHover: rgba(34, 34, 34, 0.10);
     --headerIconColor: #2d2d2d;
+    --linkTextColor: #1079d4;
 
     --iplBlack: #2d2d2d;
     --iplGreen: #09a100;
@@ -28,6 +29,11 @@ body {
     --iplGray: #848C8E;
     --iplLightGrey: #D8DBE2;
     --separateGrey: #F8F8F8;
+}
+
+a {
+    color: var(--linkTextColor);
+    text-decoration: none;
 }
 
 /* Dark Mode */
