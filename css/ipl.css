@@ -508,6 +508,7 @@ h1, h2, h3, h4, p {
     border-radius: 10px;
     position: relative;
     color: var(--iplTextColor);
+    margin-top: 15px;
 }
 
 .card-text h3 {
@@ -545,6 +546,12 @@ h1, h2, h3, h4, p {
     text-decoration: none;
 }
 
+@media (max-width: 900px) {
+    .col-3 {
+        display: none;
+    }
+}
+
 @media (max-width: 700px) {
     .card img {
         width: 30%;
@@ -555,6 +562,10 @@ h1, h2, h3, h4, p {
     .card-title {
         /* don't go off screen we need you :( */
         font-size: 10vw;
+    }
+
+    .col-2 {
+        display: none;
     }
 }
 

@@ -16,5 +16,6 @@ fetch('data/tournaments.json')
 	        </div>
 	        <% }) %>
         `, {tournaments: data});
-        document.querySelector('.tournaments-grid').innerHTML = tourneyElements;
+        document.querySelector('.tournaments-grid').innerHTML += tourneyElements;
+        new Colcade('.tournaments-grid', {columns: '.col', items: '.card'});
     })
