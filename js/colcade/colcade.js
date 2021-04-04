@@ -186,10 +186,7 @@
 // ----- events ----- //
 
     proto.onWindowResize = function() {
-        clearTimeout( this.resizeTimeout );
-        this.resizeTimeout = setTimeout( function() {
-            this.onDebouncedResize();
-        }.bind( this ), 100 );
+        this.onDebouncedResize();
     };
 
     proto.onDebouncedResize = function() {
