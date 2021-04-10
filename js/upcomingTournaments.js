@@ -43,6 +43,13 @@ function getUpcomingTournaments() {
                 <% }) %>
             `, {tournaments: data.tournaments});
 
+            if (data.tournaments.length < data.total) {
+                tournamentListElem.innerHTML += `
+                <div class="item" style="justify-content: center">
+                    <a href="https://battlefy.com/inkling-performance-labs">View more on Battlefy...</a>
+                </div>`;
+            }
+
             new Colcade(tournamentListElem, {columns: '.col', items: '.item'});
         })
         .catch(err => {
