@@ -618,6 +618,10 @@ footer h4 {
     flex-grow: 1;
 }
 
+span.link-separator {
+    margin: 0 5px;
+}
+
 /* Wrapper to prevent stuff from getting too wide */
 
 .width-wrapper {
