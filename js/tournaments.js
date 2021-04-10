@@ -22,6 +22,6 @@ function fillTournamentGrid() {
                 <% }) %>
             `, {tournaments: data});
 
-            new Colcade(tournamentGridElem, {columns: '.col', items: '.card'});
+            new Colcade('.tournaments-grid', {columns: '.col', items: '.card'});
         });
 }

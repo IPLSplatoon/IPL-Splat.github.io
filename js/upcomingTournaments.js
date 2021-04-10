@@ -23,9 +23,9 @@ function getUpcomingTournaments() {
                     const tournamentUrl = 'https://battlefy.com/inkling-performance-labs/' + tournament.slug + '/' + tournament._id + '/info';
                     const status = tournament.status == 'registration-open' ? 'Registration Open!' : 'Registration Closed'; %>
                     
-                    <div class="item">
+                    <div class="card">
                         <div class="image" style="background-image: url('<%-tournament.bannerUrl%>')"></div>
-                        <div class="tournament-info">
+                        <div class="card-text">
                             <a href="<%=tournamentUrl%>"><h3><%=tournament.name%></h3></a>
                             <h4>
                                 <span><%=new Intl.DateTimeFormat('en', dateOptions).format(date);%></span>
@@ -33,11 +33,7 @@ function getUpcomingTournaments() {
                                     • <span><%=tournament.teamsCount%> <%=tournament.teamsCount == 1 ? 'Team' : 'Teams'%></span>
                                 <%}%>
                             </h4>
-                        </div>
-                        <div class="team-info">
-                            <div>
-                                <a href="<%=tournamentUrl%>"><h4 class="tournament-status-color <%=tournament.status%>"><%=status%></h4></a>
-                            </div>
+                            <a href="<%=tournamentUrl%>"><h4 class="tournament-status-color <%=tournament.status%>"><%=status%></h4></a>
                         </div>
                     </div>
                 <% }) %>
@@ -50,7 +46,7 @@ function getUpcomingTournaments() {
                 </div>`;
             }
 
-            new Colcade(tournamentListElem, {columns: '.col', items: '.item'});
+            new Colcade(tournamentListElem, {columns: '.col', items: '.card'});
         })
         .catch(err => {
            console.error(err);
