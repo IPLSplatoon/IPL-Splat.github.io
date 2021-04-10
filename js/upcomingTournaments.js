@@ -23,21 +23,19 @@ function getUpcomingTournaments() {
                     const tournamentUrl = 'https://battlefy.com/inkling-performance-labs/' + tournament.slug + '/' + tournament._id + '/info';
                     const status = tournament.status == 'registration-open' ? 'Registration Open!' : 'Registration Closed'; %>
                     
-                    <a href="<%=tournamentUrl%>">
-                        <div class="card">
-                            <div class="image" style="background-image: url('<%-tournament.bannerUrl%>')"></div>
-                            <div class="card-text">
-                                <h3><%=tournament.name%></h3>
-                                <h4>
-                                    <span><%=new Intl.DateTimeFormat('en', dateOptions).format(date);%></span>
-                                    <%if (tournament.teamsCount > 0) {%>
-                                        • <span><%=tournament.teamsCount%> <%=tournament.teamsCount == 1 ? 'Team' : 'Teams'%></span>
-                                    <%}%>
-                                </h4>
-                               <h4 class="tournament-status-color <%=tournament.status%>"><%=status%> <i class="fas fa-angle-double-right"></i></h4>
-                            </div>
+                    <div class="card">
+                        <div class="image" style="background-image: url('<%-tournament.bannerUrl%>')"></div>
+                        <div class="card-text">
+                            <h3><%=tournament.name%></h3>
+                            <h4>
+                                <span><%=new Intl.DateTimeFormat('en', dateOptions).format(date);%></span>
+                                <%if (tournament.teamsCount > 0) {%>
+                                    • <span><%=tournament.teamsCount%> <%=tournament.teamsCount == 1 ? 'Team' : 'Teams'%></span>
+                                <%}%>
+                            </h4>
+                           <a href="<%=tournamentUrl%>"><h4 class="tournament-status-color <%=tournament.status%>"><%=status%> <i class="fas fa-angle-double-right"></i></h4></a>
                         </div>
-                    </a>
+                    </div>
                 <% }) %>
             `, {tournaments: data.tournaments});
 
@@ -48,7 +46,7 @@ function getUpcomingTournaments() {
                 </div>`;
             }
 
-            new Colcade(tournamentListElem, {columns: '.col', items: 'a'});
+            new Colcade(tournamentListElem, {columns: '.col', items: '.card'});
         })
         .catch(err => {
            console.error(err);
