@@ -28,9 +28,9 @@ function getUpcomingTournaments() {
                         <div class="tournament-info">
                             <a href="<%=tournamentUrl%>"><h3><%=tournament.name%></h3></a>
                             <h4>
-                                <%= new Intl.DateTimeFormat('en', dateOptions).format(date); %>
+                                <span><%=new Intl.DateTimeFormat('en', dateOptions).format(date);%></span>
                                 <%if (tournament.teamsCount > 0) {%>
-                                     • <%=tournament.teamsCount%> <%=tournament.teamsCount == 1 ? 'Team' : 'Teams'%>
+                                    • <span><%=tournament.teamsCount%> <%=tournament.teamsCount == 1 ? 'Team' : 'Teams'%></span>
                                 <%}%>
                             </h4>
                         </div>
