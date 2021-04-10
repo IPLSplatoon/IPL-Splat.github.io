@@ -20,7 +20,7 @@ function getUpcomingTournaments() {
                 
                 <% tournaments.forEach(tournament => { 
                     const date = new Date(tournament.startTime); 
-                    const tournamentUrl = 'https://battlefy.com/inkling-performance-labs/' + tournament.slug + '/' + tournament._id + '/info';
+                    const tournamentUrl = 'https://battlefy.com/inkling-performance-labs/' + tournament.slug + '/' + tournament._id + '/info?infoTab=details';
                     const status = tournament.status == 'registration-open' ? 'Registration Open!' : 'Registration Closed'; %>
                     
                     <div class="card">
