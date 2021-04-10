@@ -1,0 +1,89 @@
+.upcoming-tournaments-list {
+    margin: 0 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.upcoming-tournaments-list .item,
+.upcoming-tournaments-list > .loading-item {
+    background-color: var(--iplBackground);
+    min-height: 100px;
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.upcoming-tournaments-list .item {
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+}
+
+.upcoming-tournaments-list .item > .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.upcoming-tournaments-list .item > .image::after {
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-color: var(--iplBackgroundAlpha);
+    border-radius: 10px;
+}
+
+.upcoming-tournaments-list .item > .tournament-info,
+.upcoming-tournaments-list .item > .team-info {
+    z-index: 3;
+    text-align: center;
+}
+
+.upcoming-tournaments-list .item > .team-info a.battlefy-link {
+    font-size: 55px;
+    color: white;
+    transition-duration: 100ms;
+    margin-left: 5px;
+}
+
+.upcoming-tournaments-list .item > .team-info a:hover {
+    color: #dd4b5e;
+}
+
+.upcoming-tournaments-list .item > .team-info a i::before {
+    transform: translate(0, -5px);
+}
+
+.upcoming-tournaments-list > .loading-item {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.upcoming-tournaments-list h4 {
+    font-size: 1.25em;
+    margin: 2px 0;
+}
+
+.upcoming-tournaments-list h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tournament-status-color.registration-open {
+    color: var(--iplGreen);
+}
+
+.tournament-status-color.registration-closed {
+    color: var(--iplRed);
+}

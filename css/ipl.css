@@ -25,6 +25,7 @@ body {
     --iplBlack: #2d2d2d;
     --iplGreen: #09a100;
     --iplGreenHover: #056E00;
+    --iplRed: #FF2929;
     --iplYellow: #FFBB01;
     --iplGray: #848C8E;
     --iplLightGrey: #D8DBE2;
@@ -486,7 +487,7 @@ h4 {
     margin: 15px 5px;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, p {
     color: var(--iplTextColor);
 }
 
@@ -584,7 +585,7 @@ h1, h2, h3, h4, p {
     }
 
     .card-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 }
 
