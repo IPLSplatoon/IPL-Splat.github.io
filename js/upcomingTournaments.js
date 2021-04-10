@@ -34,7 +34,7 @@ function getUpcomingTournaments() {
                                         • <span><%=tournament.teamsCount%> <%=tournament.teamsCount == 1 ? 'Team' : 'Teams'%></span>
                                     <%}%>
                                 </h4>
-                               <h4 class="tournament-status-color <%=tournament.status%>"><%=status%></h4>
+                               <h4 class="tournament-status-color <%=tournament.status%>"><%=status%> <i class="fas fa-angle-double-right"></i></h4>
                             </div>
                         </div>
                     </a>
