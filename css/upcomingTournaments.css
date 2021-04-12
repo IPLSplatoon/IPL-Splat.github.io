@@ -1,0 +1,53 @@
+.upcoming-tournaments-list {
+    margin: 0 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.upcoming-tournaments-list .card {
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upcoming-tournaments-list .card > .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.upcoming-tournaments-list .card > .image::after {
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-color: var(--iplBackgroundAlpha);
+    border-radius: 10px;
+}
+
+.upcoming-tournaments-list .card > .card-text {
+    z-index: 3;
+}
+
+.upcoming-tournaments-list h4 {
+    font-size: 1.25em;
+    margin: 2px 0;
+}
+
+.upcoming-tournaments-list h3 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.tournament-status-color.registration-open {
+    color: var(--iplGreen);
+}
+
+.tournament-status-color.registration-closed {
+    color: var(--iplRed);
+}

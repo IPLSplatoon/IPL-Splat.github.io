@@ -15,6 +15,7 @@
 
     <!--CSS Libraries and custom css-->
     <link rel="stylesheet" href="css/ipl.css">
+    <link rel="stylesheet" href="css/upcomingTournaments.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -67,7 +68,7 @@
                 <div class="socials-nav-wrapper" aria-expanded="false" role="navigation">
                     <div class="header-nav">
                         <a href="/staff">Staff</a>
-                        <a href="#tournaments" onclick="toggleMenu()">Tournaments</a>
+                        <a href="/tournaments">Tournaments</a>
                     </div>
                     <div class="header-socials">
                         <a href="/discord" class="header-discord header-icon" title="Discord"><i class="fab fa-discord"></i></a>
@@ -109,26 +110,43 @@
                 </div>
             </div>
         </div>
-        <div class="width-wrapper">
-            <h2 class="card-title" id="tournaments">Tournaments</h2>
-            <div class="card-grid tournaments-grid">
-                <div class="col"></div>
-                <div class="col col-2"></div>
-                <div class="col col-3"></div>
+        <div class="width-wrapper" id="tournaments">
+            <div id="tournaments-fallback" style="display: none">
+                <h2 class="card-title">Tournaments</h2>
+                <div class="card-grid tournaments-grid">
+
+                </div>
+            </div>
+            <div id="upcoming-tournaments">
+                <h2 class="card-title">Upcoming Tournaments</h2>
+                <div class="upcoming-tournaments-list card-grid">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="padding-space">&nbsp;</div>
 
-    <footer>
-        <h4 class="footer-text">© Inkling Performance Labs | Designed by the IPL team</h4>
-        <h4 class="footer-text"><a href="/helpus">Help us!</a> | <a href="/discord">Join our Discord!</a> | <a href="/staff">Our staff</a></h4>
-    </footer>
+<footer>
+    <h4 class="footer-text">© Inkling Performance Labs | Designed by the IPL team</h4>
+    <h4 class="footer-text">
+        <a href="/helpus">Help us!</a>
+        <span class="link-separator">|</span>
+        <a href="/discord">Join our Discord!</a>
+        <span class="link-separator">|</span>
+        <a href="/staff">Our staff</a>
+    </h4>
+</footer>
 
     <script src="js/ejs/ejs.js"></script>
-    <script src="js/ipl.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/colcade/colcade.js"></script>
+    <script src="js/ipl.js"></script>
+    <script src="js/tournaments.js"></script>
+    <script src="js/upcomingTournaments.js"></script>
+    <script>
+        getUpcomingTournaments();
+    </script>
 </body>
 </html>

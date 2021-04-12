@@ -25,6 +25,7 @@ body {
     --iplBlack: #2d2d2d;
     --iplGreen: #09a100;
     --iplGreenHover: #056E00;
+    --iplRed: #FF2929;
     --iplYellow: #FFBB01;
     --iplGray: #848C8E;
     --iplLightGrey: #D8DBE2;
@@ -105,6 +106,7 @@ header {
 
 .header-ipl-logo img {
     width: 100px;
+    margin-right: 5px;
 }
 
 .header-ipl-logo div {
@@ -159,6 +161,10 @@ header {
 
 .header-image-staff {
     background-image: url('../images/staffBanner.png');
+}
+
+.header-image-tournaments {
+    background-image: url("../images/tgBanner.png");
 }
 
 .header-text-wrapper {
@@ -481,7 +487,7 @@ h4 {
     margin: 15px 5px;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, p {
     color: var(--iplTextColor);
 }
 
@@ -514,7 +520,7 @@ h1, h2, h3, h4, p {
     border-radius: 10px;
     position: relative;
     color: var(--iplTextColor);
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .card-text h3 {
@@ -579,7 +585,7 @@ h1, h2, h3, h4, p {
     }
 
     .card-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 }
 
@@ -610,6 +616,10 @@ footer h4 {
 
 .page-content {
     flex-grow: 1;
+}
+
+span.link-separator {
+    margin: 0 5px;
 }
 
 /* Wrapper to prevent stuff from getting too wide */
