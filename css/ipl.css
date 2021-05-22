@@ -638,10 +638,13 @@ span.link-separator {
 
 .more-tournament-info-button {
     text-align: center;
+}
+
+.hover-darken {
     transition-duration: 250ms;
 }
 
-.more-tournament-info-button:hover {
+.hover-darken:hover {
     background-color: var(--iplBackgroundDarken);
 }
 
@@ -651,6 +654,10 @@ span.link-separator {
 
 .flex.horizontal {
     justify-content: center;
+}
+
+.flex.vertical {
+    align-items: center;
 }
 
 .m-horiz-15 {

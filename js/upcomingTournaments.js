@@ -41,9 +41,9 @@ function getUpcomingTournaments() {
 
             if (data.tournaments.length < data.total) {
                 tournamentListElem.innerHTML += `
-                <div class="item" style="justify-content: center">
-                    <a href="https://battlefy.com/inkling-performance-labs">View more on Battlefy...</a>
-                </div>`;
+                    <a href="https://battlefy.com/inkling-performance-labs" class="card flex vertical hover-darken">
+                        <div style="font-size: 1.2em">View more tournaments on Battlefy <i class="fas fa-angle-double-right"></i></div>
+                    </a>`;
             }
 
             new Colcade(tournamentListElem, {columns: '.col', items: '.card'});
