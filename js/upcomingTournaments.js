@@ -1,5 +1,5 @@
 function getUpcomingTournaments() {
-    const tournamentEndpoint = 'https://search.battlefy.com/tournament/organization/5c6dbd2da605be0329ecf36a/upcoming?page=1&size=10';
+    const tournamentEndpoint = 'https://search.battlefy.com/tournament/organization/5c6dbd2da605be0329ecf36a/upcoming?page=1&size=9';
 
     fetch(tournamentEndpoint)
         .then((response) => {
