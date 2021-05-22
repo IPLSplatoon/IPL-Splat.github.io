@@ -15,9 +15,10 @@ body {
 
 :root {
     --iplBackground: white;
+    --iplBackgroundDarken: #EBEBEB;
     --iplBackground2: #f8f8f8;
     --iplTextColor: #2d2d2d;
-    --iplBackgroundAlpha: rgba(255, 255, 255, 0.85);
+    --iplBackgroundAlpha: rgba(255, 255, 255, 0.75);
     --iplNavHover: rgba(34, 34, 34, 0.10);
     --headerIconColor: #2d2d2d;
     --linkTextColor: #1079d4;
@@ -42,6 +43,7 @@ a {
 @media (prefers-color-scheme: dark) {
     :root {
         --iplBackground: #222;
+        --iplBackgroundDarken: #1D1D1D;
         --iplBackground2: #111;
         --iplTextColor: white;
         --iplBackgroundAlpha: rgba(34, 34, 34, 0.85);
@@ -627,4 +629,30 @@ span.link-separator {
 .width-wrapper {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.more-tournament-info {
+    display: block;
+    max-width: 350px;
+}
+
+.more-tournament-info-button {
+    text-align: center;
+    transition-duration: 250ms;
+}
+
+.more-tournament-info-button:hover {
+    background-color: var(--iplBackgroundDarken);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.horizontal {
+    justify-content: center;
+}
+
+.m-horiz-15 {
+    margin: 0 15px;
 }
