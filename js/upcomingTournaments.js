@@ -33,7 +33,9 @@ function getUpcomingTournaments() {
                                     • <span><%=tournament.teamsCount%> <%=tournament.teamsCount == 1 ? 'Team' : 'Teams'%></span>
                                 <%}%>
                             </h4>
-                           <a href="<%=tournamentUrl%>"><h4 class="tournament-status-color <%=tournament.status%>"><%=status%> <i class="fas fa-angle-double-right"></i></h4></a>
+                            <div class="flex horizontal">
+                                <a href="<%=tournamentUrl%>" class="tournament-link"><h4 class="tournament-status-color <%=tournament.status%>"><%=status%> <i class="fas fa-angle-double-right"></i></h4></a>
+                            </div>
                         </div>
                     </div>
                 <% }) %>

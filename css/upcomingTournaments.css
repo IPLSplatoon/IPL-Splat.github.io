@@ -34,6 +34,10 @@
     z-index: 3;
 }
 
+.upcoming-tournaments-list .card > .card-text > div {
+    margin-top: -3px;
+}
+
 .upcoming-tournaments-list h4 {
     font-size: 1.25em;
     margin: 2px 0;
@@ -51,3 +55,15 @@
 .tournament-status-color.registration-closed {
     color: var(--iplRed);
 }
+
+.tournament-link {
+    display: inline-block;
+    transition-duration: 250ms;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.tournament-link:hover {
+    background-color: var(--iplBackgroundAlpha);
+}
+
