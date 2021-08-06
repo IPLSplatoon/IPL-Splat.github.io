@@ -10,5 +10,9 @@ them ready for the website.
 Outside IPL / End user support will not be provided for this tool and is intended for internal use only.
 
 # Setup(TBF)
-- Setup the Google Sheets & Drive API and place their credential files within the secrets folder.
-- install all requirements using `pip install -r requirments.txt`
+- install all requirements using `pip install -r requirements.txt`
+- Set up Google credentials:
+  - Create a [Google service account](https://console.cloud.google.com/iam-admin/serviceaccounts) and allow it to access
+    the staff spreadsheet. Place its credentials in `./secrets/googleAuth.json`
+  - Create an [OAuth Client ID](https://console.cloud.google.com/apis/credentials)
+    (Setting the *Application type* to 'Desktop App') and place its credentials in `./secrets/credentials.json`
