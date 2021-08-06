@@ -11,4 +11,4 @@ Outside IPL / End user support will not be provided for this tool and is intende
 
 # Setup(TBF)
 - Setup the Google Sheets & Drive API and place their credential files within the secrets folder.
-- install all requirements using `pip install -r requirments.txt`
+- install all requirements using `pip install -r requirements.txt`
