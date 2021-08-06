@@ -1,6 +1,8 @@
 from PIL import Image
 import gspread
 import hashlib
+
+from googleapiclient.errors import HttpError
 from oauth2client.service_account import ServiceAccountCredentials
 import pickle
 import os.path
@@ -95,7 +97,7 @@ artists = []
 
 for lines in worksheetData:
     output = {}
-    if lines["isStaff"] in ["Yes (Staff, temp, invite)", "Yes"]:
+    if lines["isStaff"] in ["Yes (Staff temp invite)", "Yes", "Yes (Staff, temp, invite)"]:
         print("Outputting for: {}".format(lines["name"]))
         staffID = hashlib.md5(lines["name"].encode("utf-8")).hexdigest()
         output = {
@@ -114,14 +116,20 @@ for lines in worksheetData:
         downloader = MediaIoBaseDownload(fh, request)
         done = False
         while done is False:
-            status, done = downloader.next_chunk()
+            try:
+                status, done = downloader.next_chunk()
+            except HttpError as e:
+                print("Could not output image. Please provide file '{}' manually.".format("output/images/{}.png").format(staffID))
+                print("Error message: {}".format(e.error_details[0]["message"]))
+                break
 
-        # Crops image to be 1:1
-        staff_image = crop_image(Image.open("holding/{}.png".format(staffID)))
-        staff_image = resize_image(staff_image)
-        staff_image = staff_image.convert(mode='P', palette=Image.ADAPTIVE)
-        staff_image.save("output/images/{}.png".format(staffID))
-        staff_image.close()
+        if done is True:
+            # Crops image to be 1:1
+            staff_image = crop_image(Image.open("holding/{}.png".format(staffID)))
+            staff_image = resize_image(staff_image)
+            staff_image = staff_image.convert(mode='P', palette=Image.ADAPTIVE)
+            staff_image.save("output/images/{}.png".format(staffID))
+            staff_image.close()
 
         # Save bio to right list
         if lines["header"] == "General Staff":
