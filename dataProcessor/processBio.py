@@ -136,9 +136,9 @@ for lines in worksheetData:
             staff_image = crop_image(Image.open("holding/{}.png".format(staffID)))
             staff_image = resize_image(staff_image)
             if has_transparency(staff_image):
-                staff_image.save("output/images/{}.png".format(staffID))
+                staff_image.convert("P", palette=Image.ADAPTIVE).save("output/images/{}.png".format(staffID))
             else:
-                staff_image.convert("RGB").save("output/images/{}.jpg".format(staffID))
+                staff_image.convert("RGB", palette=Image.ADAPTIVE).save("output/images/{}.jpg".format(staffID))
                 output_file_format = 'jpg'
             staff_image.close()
 
