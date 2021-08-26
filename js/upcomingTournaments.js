@@ -6,7 +6,7 @@ function getUpcomingTournaments() {
             return response.json()
         })
         .then((data) => {
-            if (!data.tournaments) {
+            if (!data.tournaments || data.tournaments.length < 1) {
                 return fallback();
             }
 
