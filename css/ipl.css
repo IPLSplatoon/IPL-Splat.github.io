@@ -502,6 +502,11 @@ a.link-button-border:hover {
     background-image: url('../images/SJ-banner.png');
 }
 
+.sj-promo img {
+    height: 60px;
+    transform: translateY(10px);
+}
+
 .sj-promo h2, .sj-promo p, .sj-promo .link-button {
     --iplTextColor: white;
     --iplBackground: #222;
