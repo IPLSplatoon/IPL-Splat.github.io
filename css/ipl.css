@@ -418,7 +418,7 @@ header {
 
 /* Who are we? */
 
-.intro-section {
+.no-margin {
     margin: 0 !important;
 }
 
@@ -474,10 +474,42 @@ a.link-button-border:hover {
 
 /* Misc. utility styles */
 
+.bg-ipl-1 {
+    background-color: var(--iplBackground);
+}
+
 .section {
     margin: 25px;
-    background-color: var(--iplBackground);
     padding: 15px 30px;
+    position: relative;
+}
+
+.section .link-button {
+    margin: 10px 0 5px 0;
+}
+
+.sj-promo::after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-color: rgba(61, 26, 75, 0.75);
+    z-index: 1;
+}
+
+.sj-promo {
+    height: 100%;
+    background-image: url('../images/SJ-banner.png');
+}
+
+.sj-promo h2, .sj-promo p, .sj-promo .link-button {
+    --iplTextColor: white;
+    --iplBackground: #222;
+}
+
+.sj-promo > * {
+    position: relative;
+    z-index: 2;
 }
 
 h2 {
