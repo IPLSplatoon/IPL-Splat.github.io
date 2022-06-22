@@ -1,0 +1,120 @@
+:root{
+    --sj2-orange: #EA7317;
+    --sj2-orange-glow: #ea721771;
+    --sj2-blue: #5FBFF9;
+    --sj2-blue-glow: #5FBFF971;
+    --sj2-pink: #e03e81;
+    --sj2-pink-glow: #e03e8171;
+    --sj2-text: white;
+}
+
+.sj2-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: url("../images/sj2/sj2-website-bg.png");
+    background-position: center;
+    background-size: 120em;
+    animation-name: bgAnim;
+    animation-duration: 240s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 2em 0;
+    margin: 1em auto;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 2em;
+}
+
+@media (prefers-color-scheme: dark){
+    .sj2-wrapper{
+        background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%), url("../images/sj2/sj2-website-bg.png");
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .sj2-wrapper{
+        animation: none;
+    }
+}
+
+@keyframes bgAnim {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -120em 0;
+    }
+}
+
+.sj2-logo-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+}
+
+.icon{
+    content: url("../images/sj2/SJ_Logo-Horizontal.png");
+    height: 1.5em;
+    margin-right: .1em;
+}
+
+.text{
+    height: 1em;
+    transform: translateY(-.05em);
+}
+
+.sj2-info{
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--sj2-text);
+    font-family: inherit;
+}
+
+.sj2-reg-button{
+    font-size: 1.8em;
+    font-family: inherit;
+    color: var(--sj2-text);
+    border: .1em solid var(--sj2-orange);
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: .4em;
+    box-shadow: 0 0 .3em .1em var(--sj2-orange-glow);
+    padding: .4em .8em;
+    margin-top: .5em;
+    cursor: pointer;
+    transition-duration: .1s;
+    user-select: none;
+}
+
+.sj2-reg-button:hover{
+    transform: scale(1.025);
+    border-color: var(--sj2-pink);
+    box-shadow: 0 0 .4em .2em var(--sj2-pink-glow);
+}
+
+@media (max-width: 800px) {
+
+    .sj2-wrapper{
+        border-radius: 0;
+        padding: 1em;
+    }
+
+    .sj2-logo-wrapper{
+        flex-direction: column;
+        font-size: 5em;
+    }
+
+    .sj2-info{
+        font-size: 2em;
+    }
+
+    .icon{
+        content: url("../images/sj2/SJ_Logo-Veritcal.png");
+        height: 2.5em;
+        margin-bottom: -.1em;
+    }
+
+}
