@@ -89,6 +89,11 @@
     user-select: none;
 }
 
+.sj2-reg-button a{
+    text-decoration: none;
+    color: var(--sj2-text);
+}
+
 .sj2-reg-button:hover{
     transform: scale(1.025);
     border-color: var(--sj2-pink);
