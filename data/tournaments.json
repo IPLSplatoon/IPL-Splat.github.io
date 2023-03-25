@@ -10,9 +10,14 @@
     "imagePath":"images/SJ.jpg"
   },
   {
-    "title":"Testing Grounds",
-    "description":"Testing Grounds is a bi-weekly tournament running on Friday nights. The series is aimed to give teams and viewers a platform for finding and testing new ideas for tournament play as well as get more involved with competitive Splatoon",
-    "imagePath":"images/TG.png"
+    "title":"Swim or Sink",
+    "description":"Swim or Sink is a weekly tournament series aimed at providing players with practice against other teams.",
+    "imagePath":"images/Sinkorswim.png"
+  },
+  {
+    "title":"Proving Grounds",
+    "description":"Proving Grounds is a bi-weekly, fast paced tournament catered to high-level play. The series aims to give best of the best a resource to prove themselves and show their strength.",
+    "imagePath":"images/PG.png"
   },
   {
     "title":"Reef Rushdown",
@@ -23,16 +28,6 @@
     "title":"The Unnamed Tournament",
     "description":"IPL's infrequent tournament where we test things, break things and learn things. It just so happened we made it look professional somehow.",
     "imagePath":"images/UT.png"
-  },
-  {
-    "title":"King of the Castle",
-    "description":"IPL's monthly tournament running on Friday night for Europe, Aimed for providing practice to players and teams.",
-    "imagePath":"images/KC.png"
-  },
-  {
-    "title":"Swim or Sink",
-    "description":"Swim or Sink is a weekly tournament series aimed at providing players with practice against other teams.",
-    "imagePath":"images/Sinkorswim.png"
   },
   {
    "title":"High Ink",
