@@ -47,7 +47,7 @@ def resize_image(image):
     if width < new_width:
         return image
     new_height = new_width * height / width
-    return image.resize((new_width, int(new_height)), Image.ANTIALIAS)
+    return image.resize((new_width, int(new_height)))
 
 
 def LongestBio(section: list) -> int:
@@ -79,7 +79,7 @@ scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/au
 creds = ServiceAccountCredentials.from_json_keyfile_name("secrets/googleAuth.json", scope)
 client = gspread.authorize(creds)
 sheet = client.open("Low Ink Staff Bio Form (Responses)")  # Name of the google sheet file
-worksheet = sheet.worksheet("input")  # name of the sheet in question
+worksheet = sheet.worksheet("input2")  # name of the sheet in question
 worksheetData = worksheet.get_all_records()
 
 # This is the auth scope for Google Drive API
@@ -101,13 +101,10 @@ if not creds or not creds.valid:
 
 service = build('drive', 'v3', credentials=creds)
 
-commentator = []
-former = []
 headTO = []
 orgHead = []
 production = []
 staff = []
-artists = []
 
 for lines in worksheetData:
     output = {}
@@ -153,8 +150,6 @@ for lines in worksheetData:
         # Save bio to right list
         if lines["header"] == "General Staff":
             staff.append(output)
-        elif lines["header"] == "Commentators":
-            commentator.append(output)
         elif lines["header"] == "Head TO":
             headTO.append(output)
         elif lines["header"] == "Production & Development":
@@ -163,12 +158,10 @@ for lines in worksheetData:
             orgHead.append(output)
         elif lines["header"] == "Temp staff":
             staff.append(output)
-        elif lines["header"] == "Former staff":
-            former.append(output)
         elif lines["header"] == "Guest Staff":
             staff.append(output)
-        elif lines["header"] == "Artist":
-            artists.append(output)
+        else:
+            print("Unknown header value '{}' - Staff member '{}' will not be included in output".format(lines["header"], lines["name"]))
 
 staffFile = [
     {"elemClassName": "staff-layout-grid",
@@ -178,13 +171,7 @@ staffFile = [
     {"elemClassName": "head-TO-grid",
      "contents": sortBioLength(headTO)},
     {"elemClassName": "production-grid",
-     "contents": sortBioLength(production)},
-    {"elemClassName": "commentator-grid",
-     "contents": sortBioLength(commentator)},
-    {"elemClassName": "former-staff-grid",
-     "contents": sortBioLength(former)},
-    {"elemClassName": "artists-staff-grid",
-     "contents": sortBioLength(artists)}
+     "contents": sortBioLength(production)}
 ]
 
 with open('output/staff.json', 'w') as file:

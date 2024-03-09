@@ -16,3 +16,5 @@ Outside IPL / End user support will not be provided for this tool and is intende
     the staff spreadsheet. Place its credentials in `./secrets/googleAuth.json`
   - Create an [OAuth Client ID](https://console.cloud.google.com/apis/credentials)
     (Setting the *Application type* to 'Desktop App') and place its credentials in `./secrets/credentials.json`
+- Getting an `google.auth.exceptions.RefreshError: invalid_grant` error when running the processor? Try deleting the
+  `secrets/token.pickle` file.
